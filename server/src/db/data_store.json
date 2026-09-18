@@ -1,0 +1,4368 @@
+{
+  "users": [
+    {
+      "id": "user-1",
+      "name": "Alex Chen",
+      "email": "alex.chen@learn.ai",
+      "role": "student",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=256",
+      "createdAt": "2026-09-03T04:17:08.136Z",
+      "passwordHash": "scrypt$7a222ba1d927f9671ae9568383cefce7$3cdd4490ded7c75bed52a3604539d6ebae5d2c3c745067403aefe6750028fed4dc8e151f9613c1a311bb7f54f7eff68c39f4729cd7898ba8bc238827b3cb8f84"
+    },
+    {
+      "id": "admin-1",
+      "name": "Dr. Elena Rostova",
+      "email": "admin@system.ai",
+      "role": "admin",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=256",
+      "createdAt": "2026-08-18T04:17:08.137Z",
+      "passwordHash": "scrypt$a73ccf555ad57ac31d4c1f0191fa0a30$85d5978a75304f6d9d69e5c8f301ec2fbb9d30a02f45a6ad79e74307ab4b5581a308cd46e47d2efd6469ece1f1f1f5846d28951d773f7053311895ec0ee41c7f"
+    },
+    {
+      "id": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "createdAt": "2026-09-18T10:44:59.297Z",
+      "updatedAt": "2026-09-18T10:44:59.299Z",
+      "name": "Gurijala Aswitha",
+      "email": "aswithagurijala@gmail.com",
+      "role": "student",
+      "passwordHash": "scrypt$37b85cc30476d3f47a4dbc0932c68c2c$b9dec35247675a94719aa17be32e2114f1a05c74e5054ff065f09c8d71e126c86bfc155f6b6fa27999cefe8a6c3a4d6172d6170d0bf4c5fa6bccbc59a7193260"
+    }
+  ],
+  "spaces": [
+    {
+      "id": "space-ai",
+      "userId": "user-1",
+      "name": "Artificial Intelligence & Machine Learning",
+      "description": "Modern foundation models, deep architectures, attention mechanisms, and practical AI system engineering.",
+      "icon": "Brain",
+      "color": "indigo",
+      "tags": [
+        "AI",
+        "Deep Learning",
+        "Transformers",
+        "NLP"
+      ],
+      "createdAt": "2026-09-07T04:17:08.137Z"
+    },
+    {
+      "id": "space-cloud",
+      "userId": "user-1",
+      "name": "Distributed Systems & Cloud Architecture",
+      "description": "Large-scale consensus algorithms (Raft, Paxos), fault-tolerant data stores, and high-throughput microservices.",
+      "icon": "Server",
+      "color": "emerald",
+      "tags": [
+        "Distributed Systems",
+        "Cloud",
+        "Raft",
+        "Scalability"
+      ],
+      "createdAt": "2026-09-10T04:17:08.137Z"
+    },
+    {
+      "id": "space-bio",
+      "userId": "user-1",
+      "name": "Biochemistry & Cellular Genetics",
+      "description": "Molecular biology, protein 3D folding pathways, RNA transcription mechanisms, and enzyme kinetics.",
+      "icon": "Dna",
+      "color": "rose",
+      "tags": [
+        "Biology",
+        "Genetics",
+        "Proteins"
+      ],
+      "createdAt": "2026-09-13T04:17:08.137Z"
+    },
+    {
+      "id": "8b338aac-a290-4971-a822-94ccb6ea8dd7",
+      "createdAt": "2026-09-17T05:15:50.070Z",
+      "updatedAt": "2026-09-17T05:15:50.071Z",
+      "userId": "user-1",
+      "name": "My academics",
+      "description": "",
+      "icon": "Brain",
+      "color": "indigo",
+      "tags": []
+    },
+    {
+      "id": "704ef3ef-b652-49e1-9e9e-7d8d6cb6ae27",
+      "createdAt": "2026-09-18T10:45:22.130Z",
+      "updatedAt": "2026-09-18T10:45:22.130Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "name": "My academics",
+      "description": "",
+      "icon": "Brain",
+      "color": "indigo",
+      "tags": []
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-transformers",
+      "userId": "user-1",
+      "spaceId": "space-ai",
+      "name": "Transformers & Self-Attention Architectures",
+      "description": "Deep dive into Scaled Dot-Product Attention, Multi-Head projection math, Rotary Positional Embeddings (RoPE), and KV Cache optimization.",
+      "learningGoal": "Master the mathematical foundations and memory complexities of Transformer self-attention and inference optimization.",
+      "targetMastery": 90,
+      "status": "active",
+      "createdAt": "2026-09-08T04:17:08.137Z"
+    },
+    {
+      "id": "proj-diffusion",
+      "userId": "user-1",
+      "spaceId": "space-ai",
+      "name": "Diffusion Models & Latent Generative AI",
+      "description": "Understanding forward noising processes, reverse denoising U-Nets, and Classifier-Free Guidance (CFG).",
+      "learningGoal": "Understand score-based generative modeling and latent diffusion implementations.",
+      "targetMastery": 85,
+      "status": "active",
+      "createdAt": "2026-09-12T04:17:08.137Z"
+    },
+    {
+      "id": "proj-raft",
+      "userId": "user-1",
+      "spaceId": "space-cloud",
+      "name": "Raft Consensus & Replicated State Machines",
+      "description": "Leader election, log replication, safety guarantees, and membership changes in distributed databases.",
+      "learningGoal": "Implement a fault-tolerant distributed key-value store powered by Raft.",
+      "targetMastery": 90,
+      "status": "active",
+      "createdAt": "2026-09-14T04:17:08.137Z"
+    },
+    {
+      "id": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "createdAt": "2026-09-17T05:16:30.403Z",
+      "updatedAt": "2026-09-17T05:16:30.404Z",
+      "userId": "user-1",
+      "spaceId": "8b338aac-a290-4971-a822-94ccb6ea8dd7",
+      "name": "Economic policies in India",
+      "description": "",
+      "learningGoal": "want to prepare for mid and sem exams",
+      "targetMastery": 85,
+      "status": "active"
+    },
+    {
+      "id": "500aa7b0-b556-45ba-8459-7b37a1bcd598",
+      "createdAt": "2026-09-17T06:07:02.138Z",
+      "updatedAt": "2026-09-17T06:07:02.138Z",
+      "userId": "user-1",
+      "spaceId": "space-ai",
+      "name": "Quantum Mechanics",
+      "description": "",
+      "learningGoal": "Master wavefunctions",
+      "targetMastery": 85,
+      "status": "active"
+    },
+    {
+      "id": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "createdAt": "2026-09-18T10:45:55.030Z",
+      "updatedAt": "2026-09-18T10:45:55.031Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "spaceId": "704ef3ef-b652-49e1-9e9e-7d8d6cb6ae27",
+      "name": "EPI",
+      "description": "",
+      "learningGoal": "want to prepare for mids and exams",
+      "targetMastery": 85,
+      "status": "active"
+    }
+  ],
+  "materials": [
+    {
+      "id": "doc-transformers-guide",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "title": "Transformer Architecture & Self-Attention Deep Dive.pdf",
+      "originalFileName": "Transformer_Architecture_Deep_Dive.pdf",
+      "fileSize": 2450000,
+      "fileType": "application/pdf",
+      "pageCount": 18,
+      "status": "READY",
+      "progress": 100,
+      "errorMessage": null,
+      "summary": "Comprehensive guide covering Scaled Dot-Product Attention, Multi-Head Attention, RoPE positional encodings, and Residual Connections.",
+      "createdAt": "2026-09-09T04:17:08.137Z"
+    },
+    {
+      "id": "doc-flash-attn",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "title": "KV Cache Memory & FlashAttention Engineering Notes.pdf",
+      "originalFileName": "FlashAttention_and_KVCache.pdf",
+      "fileSize": 1890000,
+      "fileType": "application/pdf",
+      "pageCount": 12,
+      "status": "READY",
+      "progress": 100,
+      "errorMessage": null,
+      "summary": "Engineering analysis of GPU memory hierarchy (HBM vs SRAM), IO-awareness in FlashAttention, and token generation memory footprints.",
+      "createdAt": "2026-09-11T04:17:08.137Z"
+    },
+    {
+      "id": "fc3b2c43-292d-42f7-ab82-be107a524b60",
+      "createdAt": "2026-09-17T05:17:34.039Z",
+      "updatedAt": "2026-09-17T05:17:34.039Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "title": "Demographic-Features-and-Indicators-of-Development Unit 1",
+      "originalFileName": "Demographic-Features-and-Indicators-of-Development Unit 1.pptx",
+      "fileSize": 9709897,
+      "fileType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "filePath": "C:\\Users\\Aswitha\\.gemini\\antigravity-ide\\scratch\\ai-study-companion\\server\\uploads\\1789622253811-18980528-Demographic-Features-and-Indicators-of-Development Unit 1.pptx",
+      "pageCount": 1,
+      "status": "QUEUED",
+      "progress": 5,
+      "errorMessage": null,
+      "summary": "Uploaded learning document notes."
+    },
+    {
+      "id": "99aa1881-dfab-4de4-a6a7-8ded290a2346",
+      "createdAt": "2026-09-17T05:17:50.099Z",
+      "updatedAt": "2026-09-17T05:17:50.099Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "title": "Employment-and-Unemployment-Policy-Implications unit 2a",
+      "originalFileName": "Employment-and-Unemployment-Policy-Implications unit 2a.pptx",
+      "fileSize": 1815755,
+      "fileType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "filePath": "C:\\Users\\Aswitha\\.gemini\\antigravity-ide\\scratch\\ai-study-companion\\server\\uploads\\1789622270007-775899475-Employment-and-Unemployment-Policy-Implications unit 2a.pptx",
+      "pageCount": 1,
+      "status": "QUEUED",
+      "progress": 5,
+      "errorMessage": null,
+      "summary": "Uploaded learning document notes."
+    }
+  ],
+  "document_chunks": [
+    {
+      "id": "chunk-1",
+      "materialId": "doc-transformers-guide",
+      "projectId": "proj-transformers",
+      "pageNumber": 3,
+      "sectionTitle": "Scaled Dot-Product Attention Mechanics",
+      "content": "Scaled Dot-Product Attention computes the compatibility of Query (Q) and Key (K) vectors, then scales by sqrt(d_k) to prevent vanishing gradients in softmax for large dimensions. The formula is Attention(Q, K, V) = softmax((Q * K^T) / sqrt(d_k)) * V. Scaling by sqrt(d_k) ensures that the variance of the dot products remains 1 when elements of Q and K have mean 0 and variance 1.",
+      "concepts": [
+        "Scaled Dot-Product Attention",
+        "Softmax Scaling"
+      ],
+      "tokenCount": 88
+    },
+    {
+      "id": "chunk-2",
+      "materialId": "doc-transformers-guide",
+      "projectId": "proj-transformers",
+      "pageNumber": 7,
+      "sectionTitle": "Multi-Head Attention Projections",
+      "content": "Multi-Head Attention allows the model to jointly attend to information from different representation subspaces at different positions. Instead of performing a single attention function with d_model-dimensional queries, keys, and values, we linearly project queries, keys, and values h times with learned linear projections to d_k, d_k, and d_v dimensions respectively.",
+      "concepts": [
+        "Multi-Head Attention",
+        "Linear Projections"
+      ],
+      "tokenCount": 82
+    },
+    {
+      "id": "chunk-3",
+      "materialId": "doc-transformers-guide",
+      "projectId": "proj-transformers",
+      "pageNumber": 14,
+      "sectionTitle": "Rotary Position Embeddings (RoPE)",
+      "content": "Rotary Position Embedding (RoPE) encodes position information by rotating query and key representations in complex vector space. RoPE provides relative position awareness without requiring learnable absolute positional embedding tables, exhibiting strong length generalization for context windows.",
+      "concepts": [
+        "Positional Encoding (RoPE)",
+        "Relative Positional Awareness"
+      ],
+      "tokenCount": 75
+    },
+    {
+      "id": "chunk-4",
+      "materialId": "doc-flash-attn",
+      "projectId": "proj-transformers",
+      "pageNumber": 4,
+      "sectionTitle": "KV Cache Mechanics in Autoregressive Decoding",
+      "content": "During inference in decoder-only LLMs, generation proceeds token by token. Without caching, previous Key and Value tensors would need to be recomputed at every forward pass, creating O(N^2) redundant computation. The KV Cache stores Key and Value states across past tokens in GPU High Bandwidth Memory (HBM), reducing generation step time to O(N).",
+      "concepts": [
+        "KV Cache Optimization",
+        "Autoregressive Decoding"
+      ],
+      "tokenCount": 86
+    },
+    {
+      "id": "chunk-5",
+      "materialId": "doc-flash-attn",
+      "projectId": "proj-transformers",
+      "pageNumber": 9,
+      "sectionTitle": "FlashAttention & GPU Memory Hierarchy",
+      "content": "Standard attention stores intermediate N x N attention matrices in High Bandwidth Memory (HBM), causing memory bandwidth bottlenecks. FlashAttention tiles the Q, K, V matrices and performs softmax reduction incrementally in fast on-chip SRAM, avoiding high-latency reads and writes to global GPU HBM.",
+      "concepts": [
+        "FlashAttention",
+        "GPU Memory Hierarchy",
+        "Tiling & SRAM"
+      ],
+      "tokenCount": 84
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept-1",
+      "projectId": "proj-transformers",
+      "name": "Scaled Dot-Product Attention",
+      "description": "The core attention equation Attention(Q,K,V) = softmax(QK^T / sqrt(d_k))V and gradient scaling rationale.",
+      "importance": "high",
+      "category": "Core Architecture"
+    },
+    {
+      "id": "concept-2",
+      "projectId": "proj-transformers",
+      "name": "Multi-Head Attention",
+      "description": "Parallel attention projections across representation subspaces with output projection W_O.",
+      "importance": "high",
+      "category": "Core Architecture"
+    },
+    {
+      "id": "concept-3",
+      "projectId": "proj-transformers",
+      "name": "Positional Encoding (RoPE)",
+      "description": "Rotary position embeddings rotating vectors in 2D complex planes for relative position awareness.",
+      "importance": "critical",
+      "category": "Positional Encoding"
+    },
+    {
+      "id": "concept-4",
+      "projectId": "proj-transformers",
+      "name": "KV Cache Optimization",
+      "description": "Storing past Key and Value projection states in GPU HBM to avoid redundant recomputations during generation.",
+      "importance": "high",
+      "category": "Inference & Efficiency"
+    },
+    {
+      "id": "concept-5",
+      "projectId": "proj-transformers",
+      "name": "FlashAttention & SRAM Tiling",
+      "description": "IO-aware exact attention tiling computations within fast SRAM to bypass memory bandwidth bottlenecks.",
+      "importance": "medium",
+      "category": "Inference & Efficiency"
+    },
+    {
+      "id": "2fde0941-382f-4503-a4ab-6b569249d8f2",
+      "createdAt": "2026-09-17T06:07:02.141Z",
+      "updatedAt": "2026-09-17T06:07:02.141Z",
+      "projectId": "500aa7b0-b556-45ba-8459-7b37a1bcd598",
+      "name": "Quantum Mechanics Fundamentals",
+      "description": "Core theoretical definitions and fundamentals of Quantum Mechanics.",
+      "category": "Core Concepts",
+      "importance": "high"
+    },
+    {
+      "id": "7148cdce-333e-41aa-aecc-919274e0416e",
+      "createdAt": "2026-09-17T06:07:02.154Z",
+      "updatedAt": "2026-09-17T06:07:02.154Z",
+      "projectId": "500aa7b0-b556-45ba-8459-7b37a1bcd598",
+      "name": "Quantum Mechanics Operational Mechanics",
+      "description": "Standard functional mechanisms, calculations, and architecture.",
+      "category": "Core Concepts",
+      "importance": "high"
+    },
+    {
+      "id": "d77821f5-1a18-4788-a6e9-453721e23115",
+      "createdAt": "2026-09-17T06:07:02.165Z",
+      "updatedAt": "2026-09-17T06:07:02.165Z",
+      "projectId": "500aa7b0-b556-45ba-8459-7b37a1bcd598",
+      "name": "Quantum Mechanics System Tradeoffs",
+      "description": "Performance, computational constraints, and optimization strategies.",
+      "category": "Core Concepts",
+      "importance": "high"
+    },
+    {
+      "id": "e1613ed0-eb48-4ab5-b1b5-02fa4a413571",
+      "createdAt": "2026-09-17T06:07:34.043Z",
+      "updatedAt": "2026-09-17T06:07:34.043Z",
+      "projectId": "proj-raft",
+      "name": "Raft Consensus & Replicated State Machines - Fundamentals",
+      "description": "Foundational domain concept derived from learning goal: \"Implement a fault-tolerant distributed key-value store powered by Raft.\"",
+      "category": "Core Concepts",
+      "importance": "high"
+    },
+    {
+      "id": "56c94b76-5479-4a19-91b3-83fdbe045013",
+      "createdAt": "2026-09-17T06:07:34.048Z",
+      "updatedAt": "2026-09-17T06:07:34.048Z",
+      "projectId": "proj-raft",
+      "name": "Raft Consensus & Replicated State Machines - Operational Mechanics",
+      "description": "Foundational domain concept derived from learning goal: \"Implement a fault-tolerant distributed key-value store powered by Raft.\"",
+      "category": "Core Concepts",
+      "importance": "high"
+    },
+    {
+      "id": "b34eaa31-825d-4b1f-bba2-c18bbf22e93c",
+      "createdAt": "2026-09-17T06:07:34.052Z",
+      "updatedAt": "2026-09-17T06:07:34.052Z",
+      "projectId": "proj-raft",
+      "name": "Raft Consensus & Replicated State Machines - Core Architecture & Tradeoffs",
+      "description": "Foundational domain concept derived from learning goal: \"Implement a fault-tolerant distributed key-value store powered by Raft.\"",
+      "category": "Core Concepts",
+      "importance": "high"
+    },
+    {
+      "id": "aae1ae1e-8d14-414b-9cc7-60a9f77840bc",
+      "createdAt": "2026-09-17T06:09:03.971Z",
+      "updatedAt": "2026-09-17T06:09:03.971Z",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "name": "Economic policies in India - Fundamentals",
+      "description": "Foundational domain concept derived from learning goal: \"want to prepare for mid and sem exams\"",
+      "category": "Core Concepts",
+      "importance": "high"
+    },
+    {
+      "id": "b03cd1bf-dfa1-4b60-9da5-c9caebf2c4ad",
+      "createdAt": "2026-09-17T06:09:03.976Z",
+      "updatedAt": "2026-09-17T06:09:03.976Z",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "name": "Economic policies in India - Operational Mechanics",
+      "description": "Foundational domain concept derived from learning goal: \"want to prepare for mid and sem exams\"",
+      "category": "Core Concepts",
+      "importance": "high"
+    },
+    {
+      "id": "b34ac552-a3ce-4b86-abe4-93c2bdb3b8f4",
+      "createdAt": "2026-09-17T06:09:03.981Z",
+      "updatedAt": "2026-09-17T06:09:03.981Z",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "name": "Economic policies in India - Core Architecture & Tradeoffs",
+      "description": "Foundational domain concept derived from learning goal: \"want to prepare for mid and sem exams\"",
+      "category": "Core Concepts",
+      "importance": "high"
+    },
+    {
+      "id": "b5c3a61a-2850-4616-8b84-11771b4b816e",
+      "createdAt": "2026-09-18T10:45:55.036Z",
+      "updatedAt": "2026-09-18T10:45:55.036Z",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "name": "EPI Fundamentals",
+      "description": "Core theoretical definitions and fundamentals of EPI.",
+      "category": "Core Concepts",
+      "importance": "high"
+    },
+    {
+      "id": "dacd7f54-f3e8-4f1f-bb2e-a68f75805bc2",
+      "createdAt": "2026-09-18T10:45:55.054Z",
+      "updatedAt": "2026-09-18T10:45:55.054Z",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "name": "EPI Operational Mechanics",
+      "description": "Standard functional mechanisms, calculations, and architecture.",
+      "category": "Core Concepts",
+      "importance": "high"
+    },
+    {
+      "id": "fbf2b7d8-03a8-4599-b358-687fe6d453fd",
+      "createdAt": "2026-09-18T10:45:55.071Z",
+      "updatedAt": "2026-09-18T10:45:55.071Z",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "name": "EPI System Tradeoffs",
+      "description": "Performance, computational constraints, and optimization strategies.",
+      "category": "Core Concepts",
+      "importance": "high"
+    }
+  ],
+  "concept_mastery": [
+    {
+      "id": "mast-1",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-1",
+      "conceptName": "Scaled Dot-Product Attention",
+      "score": 88,
+      "status": "Improving",
+      "evidenceCount": 14,
+      "lastAssessedAt": "2026-09-16T04:17:08.137Z"
+    },
+    {
+      "id": "mast-2",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-2",
+      "conceptName": "Multi-Head Attention",
+      "score": 72,
+      "status": "Stable",
+      "evidenceCount": 9,
+      "lastAssessedAt": "2026-09-15T04:17:08.137Z"
+    },
+    {
+      "id": "mast-3",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-3",
+      "conceptName": "Positional Encoding (RoPE)",
+      "score": 66,
+      "status": "Improving",
+      "evidenceCount": 8,
+      "lastAssessedAt": "2026-09-17T04:42:32.728Z",
+      "updatedAt": "2026-09-17T04:42:32.728Z"
+    },
+    {
+      "id": "mast-4",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-4",
+      "conceptName": "KV Cache Optimization",
+      "score": 65,
+      "status": "Stable",
+      "evidenceCount": 8,
+      "lastAssessedAt": "2026-09-14T04:17:08.137Z"
+    },
+    {
+      "id": "mast-5",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-5",
+      "conceptName": "FlashAttention & SRAM Tiling",
+      "score": 63,
+      "status": "Improving",
+      "evidenceCount": 6,
+      "lastAssessedAt": "2026-09-17T04:17:33.404Z",
+      "updatedAt": "2026-09-17T04:17:33.404Z"
+    },
+    {
+      "id": "57b9a751-7f2c-41f7-a33e-6de126d4413b",
+      "createdAt": "2026-09-17T06:07:02.146Z",
+      "updatedAt": "2026-09-17T06:07:02.146Z",
+      "userId": "user-1",
+      "projectId": "500aa7b0-b556-45ba-8459-7b37a1bcd598",
+      "conceptId": "2fde0941-382f-4503-a4ab-6b569249d8f2",
+      "conceptName": "Quantum Mechanics Fundamentals",
+      "score": 50,
+      "status": "Stable",
+      "evidenceCount": 0,
+      "lastAssessedAt": "2026-09-17T06:07:02.145Z"
+    },
+    {
+      "id": "49ca07a7-7fe3-4cec-91ea-5a0c003922ec",
+      "createdAt": "2026-09-17T06:07:02.158Z",
+      "updatedAt": "2026-09-17T06:07:02.158Z",
+      "userId": "user-1",
+      "projectId": "500aa7b0-b556-45ba-8459-7b37a1bcd598",
+      "conceptId": "7148cdce-333e-41aa-aecc-919274e0416e",
+      "conceptName": "Quantum Mechanics Operational Mechanics",
+      "score": 50,
+      "status": "Stable",
+      "evidenceCount": 0,
+      "lastAssessedAt": "2026-09-17T06:07:02.158Z"
+    },
+    {
+      "id": "86ee2004-e240-4c29-9d9b-f27268893ba2",
+      "createdAt": "2026-09-17T06:07:02.168Z",
+      "updatedAt": "2026-09-17T06:07:02.168Z",
+      "userId": "user-1",
+      "projectId": "500aa7b0-b556-45ba-8459-7b37a1bcd598",
+      "conceptId": "d77821f5-1a18-4788-a6e9-453721e23115",
+      "conceptName": "Quantum Mechanics System Tradeoffs",
+      "score": 50,
+      "status": "Stable",
+      "evidenceCount": 0,
+      "lastAssessedAt": "2026-09-17T06:07:02.168Z"
+    },
+    {
+      "id": "9aa5e6a2-45be-430e-847f-84104b9296db",
+      "createdAt": "2026-09-17T06:07:34.045Z",
+      "updatedAt": "2026-09-17T06:08:45.942Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "conceptId": "e1613ed0-eb48-4ab5-b1b5-02fa4a413571",
+      "conceptName": "Raft Consensus & Replicated State Machines - Fundamentals",
+      "score": 54,
+      "status": "Requiring Attention",
+      "evidenceCount": 2,
+      "lastAssessedAt": "2026-09-17T06:08:45.942Z"
+    },
+    {
+      "id": "c93a5dfe-4633-4335-82d2-ed1d4648321d",
+      "createdAt": "2026-09-17T06:07:34.049Z",
+      "updatedAt": "2026-09-17T06:08:18.141Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "conceptId": "56c94b76-5479-4a19-91b3-83fdbe045013",
+      "conceptName": "Raft Consensus & Replicated State Machines - Operational Mechanics",
+      "score": 32,
+      "status": "Requiring Attention",
+      "evidenceCount": 2,
+      "lastAssessedAt": "2026-09-17T06:08:18.141Z"
+    },
+    {
+      "id": "23a01afa-c56a-43b5-b196-9700d2cd25b7",
+      "createdAt": "2026-09-17T06:07:34.055Z",
+      "updatedAt": "2026-09-17T06:08:35.844Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "conceptId": "b34eaa31-825d-4b1f-bba2-c18bbf22e93c",
+      "conceptName": "Raft Consensus & Replicated State Machines - Core Architecture & Tradeoffs",
+      "score": 32,
+      "status": "Requiring Attention",
+      "evidenceCount": 2,
+      "lastAssessedAt": "2026-09-17T06:08:35.844Z"
+    },
+    {
+      "id": "6a08e581-1278-4150-a0e4-8e39d1282360",
+      "createdAt": "2026-09-17T06:09:03.973Z",
+      "updatedAt": "2026-09-17T06:09:21.910Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "conceptId": "aae1ae1e-8d14-414b-9cc7-60a9f77840bc",
+      "conceptName": "Economic policies in India - Fundamentals",
+      "score": 62,
+      "status": "Improving",
+      "evidenceCount": 1,
+      "lastAssessedAt": "2026-09-17T06:09:21.910Z"
+    },
+    {
+      "id": "ec7a604f-e357-4550-8ac2-4019dcaa8be2",
+      "createdAt": "2026-09-17T06:09:03.978Z",
+      "updatedAt": "2026-09-17T06:09:29.058Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "conceptId": "b03cd1bf-dfa1-4b60-9da5-c9caebf2c4ad",
+      "conceptName": "Economic policies in India - Operational Mechanics",
+      "score": 40,
+      "status": "Requiring Attention",
+      "evidenceCount": 1,
+      "lastAssessedAt": "2026-09-17T06:09:29.058Z"
+    },
+    {
+      "id": "523e448e-7a35-4f4e-83c9-bc8ab714a88f",
+      "createdAt": "2026-09-17T06:09:03.985Z",
+      "updatedAt": "2026-09-17T06:09:35.723Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "conceptId": "b34ac552-a3ce-4b86-abe4-93c2bdb3b8f4",
+      "conceptName": "Economic policies in India - Core Architecture & Tradeoffs",
+      "score": 62,
+      "status": "Improving",
+      "evidenceCount": 1,
+      "lastAssessedAt": "2026-09-17T06:09:35.723Z"
+    },
+    {
+      "id": "574bb38f-6e26-49d7-97b9-b40a79665a44",
+      "createdAt": "2026-09-18T10:45:55.042Z",
+      "updatedAt": "2026-09-18T10:47:07.046Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "conceptId": "b5c3a61a-2850-4616-8b84-11771b4b816e",
+      "conceptName": "EPI Fundamentals",
+      "score": 62,
+      "status": "Improving",
+      "evidenceCount": 1,
+      "lastAssessedAt": "2026-09-18T10:47:07.046Z"
+    },
+    {
+      "id": "d929a2e7-b7bb-444c-8e94-bbba3c8df5ad",
+      "createdAt": "2026-09-18T10:45:55.059Z",
+      "updatedAt": "2026-09-18T10:47:22.583Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "conceptId": "dacd7f54-f3e8-4f1f-bb2e-a68f75805bc2",
+      "conceptName": "EPI Operational Mechanics",
+      "score": 40,
+      "status": "Requiring Attention",
+      "evidenceCount": 1,
+      "lastAssessedAt": "2026-09-18T10:47:22.583Z"
+    },
+    {
+      "id": "f8ddf3e1-c191-41d4-8153-92e733fed96b",
+      "createdAt": "2026-09-18T10:45:55.086Z",
+      "updatedAt": "2026-09-18T10:47:27.964Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "conceptId": "fbf2b7d8-03a8-4599-b358-687fe6d453fd",
+      "conceptName": "EPI System Tradeoffs",
+      "score": 42,
+      "status": "Requiring Attention",
+      "evidenceCount": 1,
+      "lastAssessedAt": "2026-09-18T10:47:27.964Z"
+    }
+  ],
+  "mastery_history": [
+    {
+      "id": "mh-1",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-1",
+      "score": 62,
+      "timestamp": "2026-09-10T04:17:08.137Z"
+    },
+    {
+      "id": "mh-2",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-1",
+      "score": 75,
+      "timestamp": "2026-09-13T04:17:08.137Z"
+    },
+    {
+      "id": "mh-3",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-1",
+      "score": 88,
+      "timestamp": "2026-09-16T04:17:08.137Z"
+    },
+    {
+      "id": "mh-4",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-3",
+      "score": 50,
+      "timestamp": "2026-09-12T04:17:08.137Z"
+    },
+    {
+      "id": "mh-5",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-3",
+      "score": 42,
+      "timestamp": "2026-09-16T16:17:08.137Z"
+    },
+    {
+      "id": "c02cb054-eb96-4df6-bc2d-df592fae5263",
+      "createdAt": "2026-09-17T04:17:08.194Z",
+      "updatedAt": "2026-09-17T04:17:08.194Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-3",
+      "score": 54,
+      "timestamp": "2026-09-17T04:17:08.194Z"
+    },
+    {
+      "id": "c7be439a-6fa4-4e83-98b4-ca4582fe8732",
+      "createdAt": "2026-09-17T04:17:33.406Z",
+      "updatedAt": "2026-09-17T04:17:33.406Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-5",
+      "score": 63,
+      "timestamp": "2026-09-17T04:17:33.406Z"
+    },
+    {
+      "id": "18feefe9-61fd-4fdf-ad7f-e6ec1510bf8f",
+      "createdAt": "2026-09-17T04:42:32.729Z",
+      "updatedAt": "2026-09-17T04:42:32.729Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-3",
+      "score": 66,
+      "timestamp": "2026-09-17T04:42:32.729Z"
+    },
+    {
+      "id": "93f477f0-9ac2-4155-b173-63616087c985",
+      "createdAt": "2026-09-17T06:07:40.581Z",
+      "updatedAt": "2026-09-17T06:07:40.581Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "conceptId": "e1613ed0-eb48-4ab5-b1b5-02fa4a413571",
+      "score": 62,
+      "timestamp": "2026-09-17T06:07:40.581Z"
+    },
+    {
+      "id": "c2184696-34ce-4056-b92e-300c49377d92",
+      "createdAt": "2026-09-17T06:07:52.085Z",
+      "updatedAt": "2026-09-17T06:07:52.085Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "conceptId": "56c94b76-5479-4a19-91b3-83fdbe045013",
+      "score": 40,
+      "timestamp": "2026-09-17T06:07:52.085Z"
+    },
+    {
+      "id": "db5e7bda-fa16-49c2-ba50-34535c9feef7",
+      "createdAt": "2026-09-17T06:08:07.562Z",
+      "updatedAt": "2026-09-17T06:08:07.562Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "conceptId": "b34eaa31-825d-4b1f-bba2-c18bbf22e93c",
+      "score": 42,
+      "timestamp": "2026-09-17T06:08:07.562Z"
+    },
+    {
+      "id": "ec158efc-27c0-4584-8c1d-681ed3e161f9",
+      "createdAt": "2026-09-17T06:08:18.144Z",
+      "updatedAt": "2026-09-17T06:08:18.144Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "conceptId": "56c94b76-5479-4a19-91b3-83fdbe045013",
+      "score": 32,
+      "timestamp": "2026-09-17T06:08:18.144Z"
+    },
+    {
+      "id": "a603d645-8b2a-42c3-bfc8-1b3c5fe6bff3",
+      "createdAt": "2026-09-17T06:08:35.846Z",
+      "updatedAt": "2026-09-17T06:08:35.846Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "conceptId": "b34eaa31-825d-4b1f-bba2-c18bbf22e93c",
+      "score": 32,
+      "timestamp": "2026-09-17T06:08:35.846Z"
+    },
+    {
+      "id": "f9d23c01-5b11-4398-b77a-5c82243e7b0a",
+      "createdAt": "2026-09-17T06:08:45.945Z",
+      "updatedAt": "2026-09-17T06:08:45.945Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "conceptId": "e1613ed0-eb48-4ab5-b1b5-02fa4a413571",
+      "score": 54,
+      "timestamp": "2026-09-17T06:08:45.945Z"
+    },
+    {
+      "id": "3bbe31c3-1f8c-44ec-bceb-6c73b17ab70d",
+      "createdAt": "2026-09-17T06:09:21.912Z",
+      "updatedAt": "2026-09-17T06:09:21.912Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "conceptId": "aae1ae1e-8d14-414b-9cc7-60a9f77840bc",
+      "score": 62,
+      "timestamp": "2026-09-17T06:09:21.912Z"
+    },
+    {
+      "id": "68c88df5-705e-4da2-ba75-7460d0856040",
+      "createdAt": "2026-09-17T06:09:29.061Z",
+      "updatedAt": "2026-09-17T06:09:29.061Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "conceptId": "b03cd1bf-dfa1-4b60-9da5-c9caebf2c4ad",
+      "score": 40,
+      "timestamp": "2026-09-17T06:09:29.061Z"
+    },
+    {
+      "id": "ecb554e1-ca22-47d2-849c-94810b455ac1",
+      "createdAt": "2026-09-17T06:09:35.726Z",
+      "updatedAt": "2026-09-17T06:09:35.726Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "conceptId": "b34ac552-a3ce-4b86-abe4-93c2bdb3b8f4",
+      "score": 62,
+      "timestamp": "2026-09-17T06:09:35.725Z"
+    },
+    {
+      "id": "f37d457e-8d4c-47ee-99e9-cff1165dbddd",
+      "createdAt": "2026-09-18T10:47:07.050Z",
+      "updatedAt": "2026-09-18T10:47:07.050Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "conceptId": "b5c3a61a-2850-4616-8b84-11771b4b816e",
+      "score": 62,
+      "timestamp": "2026-09-18T10:47:07.050Z"
+    },
+    {
+      "id": "3b75d3b7-9ec2-46ca-bcf7-5599127b6e16",
+      "createdAt": "2026-09-18T10:47:22.586Z",
+      "updatedAt": "2026-09-18T10:47:22.586Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "conceptId": "dacd7f54-f3e8-4f1f-bb2e-a68f75805bc2",
+      "score": 40,
+      "timestamp": "2026-09-18T10:47:22.586Z"
+    },
+    {
+      "id": "d738516c-79f3-4a17-aaff-ab172c05dcf9",
+      "createdAt": "2026-09-18T10:47:27.980Z",
+      "updatedAt": "2026-09-18T10:47:27.980Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "conceptId": "fbf2b7d8-03a8-4599-b358-687fe6d453fd",
+      "score": 42,
+      "timestamp": "2026-09-18T10:47:27.980Z"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "conv-1",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "title": "Understanding Softmax Scaling Factor",
+      "createdAt": "2026-09-15T04:17:08.137Z",
+      "updatedAt": "2026-09-16T04:17:08.137Z"
+    },
+    {
+      "id": "fda57aa6-c4d8-4828-8f61-763d82fc02c8",
+      "createdAt": "2026-09-17T05:14:27.898Z",
+      "updatedAt": "2026-09-17T05:14:27.898Z",
+      "userId": "user-1",
+      "projectId": "proj-diffusion",
+      "title": "AI Tutor Session"
+    },
+    {
+      "id": "e7c9181b-7164-40c0-9713-d45855e72ed7",
+      "createdAt": "2026-09-17T05:18:05.023Z",
+      "updatedAt": "2026-09-17T05:18:05.023Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "title": "AI Tutor Session"
+    },
+    {
+      "id": "a1516436-b2ce-472f-a46b-2a7998a3cc6b",
+      "createdAt": "2026-09-17T05:58:34.013Z",
+      "updatedAt": "2026-09-17T05:58:34.013Z",
+      "userId": "admin-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "title": "AI Tutor Session"
+    },
+    {
+      "id": "ca218187-cb43-46d1-97a3-dd66e99cfb3f",
+      "createdAt": "2026-09-17T06:03:49.351Z",
+      "updatedAt": "2026-09-17T06:03:49.351Z",
+      "userId": "admin-1",
+      "projectId": "proj-raft",
+      "title": "AI Tutor Session"
+    },
+    {
+      "id": "2b13e2d5-8e36-49a3-af39-378eca7dd039",
+      "createdAt": "2026-09-18T10:48:31.371Z",
+      "updatedAt": "2026-09-18T10:48:31.372Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "title": "AI Tutor Session"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-1",
+      "conversationId": "conv-1",
+      "sender": "user",
+      "content": "Why is the dot product of Query and Key scaled by sqrt(d_k) in the attention formula?",
+      "createdAt": "2026-09-15T04:17:08.137Z"
+    },
+    {
+      "id": "msg-2",
+      "conversationId": "conv-1",
+      "sender": "assistant",
+      "content": "In Scaled Dot-Product Attention, the dot product between Query (Q) and Key (K) is scaled by `1 / sqrt(d_k)` primarily to prevent the softmax function from suffering from vanishing gradients when the vector dimension `d_k` is large.\n\n### Mathematical Reason:\nIf components of Query and Key are independent random variables with zero mean and unit variance, their dot product has a mean of `0` and a variance of `d_k`. For large values of `d_k`, the magnitudes of the dot products grow very large in scale, pushing the softmax function into regions where its gradients are extremely small.\n\nDividing by `sqrt(d_k)` brings the variance back to `1`, preserving stable gradient propagation during backpropagation.",
+      "citations": [
+        {
+          "materialId": "doc-transformers-guide",
+          "materialTitle": "Transformer Architecture & Self-Attention Deep Dive.pdf",
+          "pageNumber": 3,
+          "sectionTitle": "Scaled Dot-Product Attention Mechanics",
+          "snippet": "Scaled Dot-Product Attention computes the compatibility of Query (Q) and Key (K) vectors, then scales by sqrt(d_k) to prevent vanishing gradients in softmax for large dimensions."
+        }
+      ],
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "latencyMs": 420,
+      "tokenUsage": {
+        "prompt": 310,
+        "completion": 185,
+        "total": 495
+      },
+      "createdAt": "2026-09-15T04:17:09.137Z"
+    },
+    {
+      "id": "692b6bfa-f39d-4f83-8aaa-708e3ee35753",
+      "createdAt": "2026-09-17T04:17:08.166Z",
+      "updatedAt": "2026-09-17T04:17:08.166Z",
+      "conversationId": "conv-test-1",
+      "sender": "assistant",
+      "content": "Based on your project materials (**Scaled Dot-Product Attention Mechanics**):\n\nScaled Dot-Product Attention computes the compatibility of Query (Q) and Key (K) vectors, then scales by sqrt(d_k) to prevent vanishing gradients in softmax for large dimensions. The formula is Attention(Q, K, V) = softmax((Q * K^T) / sqrt(d_k)) * V. Scaling by sqrt(d_k) ensures that the variance of the dot products remains 1 when elements of Q and K have mean 0 and variance 1.\n\n### Key Takeaway:\nThis concept connects directly to your learning goal for this project. The mathematical foundations ensure numerical stability and optimal compute performance.\n\n**Source Citation**: [Transformer Architecture & Self-Attention Deep Dive.pdf — Page 3]",
+      "citations": [
+        {
+          "materialId": "doc-transformers-guide",
+          "materialTitle": "Transformer Architecture & Self-Attention Deep Dive.pdf",
+          "pageNumber": 3,
+          "sectionTitle": "Scaled Dot-Product Attention Mechanics",
+          "snippet": "Scaled Dot-Product Attention computes the compatibility of Query (Q) and Key (K) vectors, then scales by sqrt(d_k) to prevent vanishing gradients in softmax for large dimensions. T..."
+        },
+        {
+          "materialId": "doc-transformers-guide",
+          "materialTitle": "Transformer Architecture & Self-Attention Deep Dive.pdf",
+          "pageNumber": 7,
+          "sectionTitle": "Multi-Head Attention Projections",
+          "snippet": "Multi-Head Attention allows the model to jointly attend to information from different representation subspaces at different positions. Instead of performing a single attention func..."
+        },
+        {
+          "materialId": "doc-flash-attn",
+          "materialTitle": "KV Cache Memory & FlashAttention Engineering Notes.pdf",
+          "pageNumber": 9,
+          "sectionTitle": "FlashAttention & GPU Memory Hierarchy",
+          "snippet": "Standard attention stores intermediate N x N attention matrices in High Bandwidth Memory (HBM), causing memory bandwidth bottlenecks. FlashAttention tiles the Q, K, V matrices and ..."
+        }
+      ],
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 629,
+        "completion": 192,
+        "total": 821
+      },
+      "logId": "d9aace97-13cf-471b-9a94-5b5619bb404f"
+    },
+    {
+      "id": "73c38671-0847-4e47-b10a-48c637917368",
+      "createdAt": "2026-09-17T04:17:08.172Z",
+      "updatedAt": "2026-09-17T04:17:08.172Z",
+      "conversationId": "conv-test-1",
+      "sender": "assistant",
+      "content": "Based on your project materials (**Scaled Dot-Product Attention Mechanics**):\n\nScaled Dot-Product Attention computes the compatibility of Query (Q) and Key (K) vectors, then scales by sqrt(d_k) to prevent vanishing gradients in softmax for large dimensions. The formula is Attention(Q, K, V) = softmax((Q * K^T) / sqrt(d_k)) * V. Scaling by sqrt(d_k) ensures that the variance of the dot products remains 1 when elements of Q and K have mean 0 and variance 1.\n\n### Key Takeaway:\nThis concept connects directly to your learning goal for this project. The mathematical foundations ensure numerical stability and optimal compute performance.\n\n**Source Citation**: [Transformer Architecture & Self-Attention Deep Dive.pdf — Page 3]",
+      "citations": [
+        {
+          "materialId": "doc-transformers-guide",
+          "materialTitle": "Transformer Architecture & Self-Attention Deep Dive.pdf",
+          "pageNumber": 3,
+          "sectionTitle": "Scaled Dot-Product Attention Mechanics",
+          "snippet": "Scaled Dot-Product Attention computes the compatibility of Query (Q) and Key (K) vectors, then scales by sqrt(d_k) to prevent vanishing gradients in softmax for large dimensions. T..."
+        },
+        {
+          "materialId": "doc-flash-attn",
+          "materialTitle": "KV Cache Memory & FlashAttention Engineering Notes.pdf",
+          "pageNumber": 9,
+          "sectionTitle": "FlashAttention & GPU Memory Hierarchy",
+          "snippet": "Standard attention stores intermediate N x N attention matrices in High Bandwidth Memory (HBM), causing memory bandwidth bottlenecks. FlashAttention tiles the Q, K, V matrices and ..."
+        },
+        {
+          "materialId": "doc-transformers-guide",
+          "materialTitle": "Transformer Architecture & Self-Attention Deep Dive.pdf",
+          "pageNumber": 7,
+          "sectionTitle": "Multi-Head Attention Projections",
+          "snippet": "Multi-Head Attention allows the model to jointly attend to information from different representation subspaces at different positions. Instead of performing a single attention func..."
+        }
+      ],
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 643,
+        "completion": 192,
+        "total": 835
+      },
+      "logId": "a0bdafec-ac49-42ef-875b-23d698455bb8"
+    },
+    {
+      "id": "a5044571-598c-420d-9b86-da769b3d7e26",
+      "createdAt": "2026-09-17T04:17:33.370Z",
+      "updatedAt": "2026-09-17T04:17:33.370Z",
+      "conversationId": "conv-test-1",
+      "sender": "assistant",
+      "content": "Based on your project materials (**Scaled Dot-Product Attention Mechanics**):\n\nScaled Dot-Product Attention computes the compatibility of Query (Q) and Key (K) vectors, then scales by sqrt(d_k) to prevent vanishing gradients in softmax for large dimensions. The formula is Attention(Q, K, V) = softmax((Q * K^T) / sqrt(d_k)) * V. Scaling by sqrt(d_k) ensures that the variance of the dot products remains 1 when elements of Q and K have mean 0 and variance 1.\n\n### Key Takeaway:\nThis concept connects directly to your learning goal for this project. The mathematical foundations ensure numerical stability and optimal compute performance.\n\n**Source Citation**: [Transformer Architecture & Self-Attention Deep Dive.pdf — Page 3]",
+      "citations": [
+        {
+          "materialId": "doc-transformers-guide",
+          "materialTitle": "Transformer Architecture & Self-Attention Deep Dive.pdf",
+          "pageNumber": 3,
+          "sectionTitle": "Scaled Dot-Product Attention Mechanics",
+          "snippet": "Scaled Dot-Product Attention computes the compatibility of Query (Q) and Key (K) vectors, then scales by sqrt(d_k) to prevent vanishing gradients in softmax for large dimensions. T..."
+        },
+        {
+          "materialId": "doc-transformers-guide",
+          "materialTitle": "Transformer Architecture & Self-Attention Deep Dive.pdf",
+          "pageNumber": 7,
+          "sectionTitle": "Multi-Head Attention Projections",
+          "snippet": "Multi-Head Attention allows the model to jointly attend to information from different representation subspaces at different positions. Instead of performing a single attention func..."
+        }
+      ],
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "latencyMs": 1,
+      "tokenUsage": {
+        "prompt": 517,
+        "completion": 192,
+        "total": 709
+      },
+      "logId": "74a0aa2d-b253-443e-8274-bdefa5329273"
+    },
+    {
+      "id": "1cd7260b-0937-4cb7-b6be-fe4bceb6517c",
+      "createdAt": "2026-09-17T04:17:33.377Z",
+      "updatedAt": "2026-09-17T04:17:33.377Z",
+      "conversationId": "conv-test-1",
+      "sender": "assistant",
+      "content": "I reviewed the uploaded materials for this project, but there is insufficient evidence to answer your question about this topic.\n\n> ⚠️ **Evidence Notice**: The project documents do not discuss this concept. To maintain strict learning accuracy, I will not speculate based on unverified information.\n\nWould you like me to provide a general explanation using general AI knowledge, or would you like to upload related notes or papers to this project?",
+      "citations": [],
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 303,
+        "completion": 118,
+        "total": 421
+      },
+      "logId": "474dbe51-5572-426f-8062-5e46a54ec7b4"
+    },
+    {
+      "id": "9a70fb8b-3cfd-4067-a2c1-f1b997013eca",
+      "createdAt": "2026-09-17T04:42:32.707Z",
+      "updatedAt": "2026-09-17T04:42:32.707Z",
+      "conversationId": "conv-test-1",
+      "sender": "assistant",
+      "content": "Based on your project materials (**Scaled Dot-Product Attention Mechanics**):\n\nScaled Dot-Product Attention computes the compatibility of Query (Q) and Key (K) vectors, then scales by sqrt(d_k) to prevent vanishing gradients in softmax for large dimensions. The formula is Attention(Q, K, V) = softmax((Q * K^T) / sqrt(d_k)) * V. Scaling by sqrt(d_k) ensures that the variance of the dot products remains 1 when elements of Q and K have mean 0 and variance 1.\n\n### Key Takeaway:\nThis concept connects directly to your learning goal for this project. The mathematical foundations ensure numerical stability and optimal compute performance.\n\n**Source Citation**: [Transformer Architecture & Self-Attention Deep Dive.pdf — Page 3]",
+      "citations": [
+        {
+          "materialId": "doc-transformers-guide",
+          "materialTitle": "Transformer Architecture & Self-Attention Deep Dive.pdf",
+          "pageNumber": 3,
+          "sectionTitle": "Scaled Dot-Product Attention Mechanics",
+          "snippet": "Scaled Dot-Product Attention computes the compatibility of Query (Q) and Key (K) vectors, then scales by sqrt(d_k) to prevent vanishing gradients in softmax for large dimensions. T..."
+        },
+        {
+          "materialId": "doc-transformers-guide",
+          "materialTitle": "Transformer Architecture & Self-Attention Deep Dive.pdf",
+          "pageNumber": 7,
+          "sectionTitle": "Multi-Head Attention Projections",
+          "snippet": "Multi-Head Attention allows the model to jointly attend to information from different representation subspaces at different positions. Instead of performing a single attention func..."
+        }
+      ],
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 509,
+        "completion": 192,
+        "total": 701
+      },
+      "logId": "17a07319-fae7-45c6-a10e-ee1404c97ffe"
+    },
+    {
+      "id": "c9538881-bac0-4c57-bbbd-1d489df549be",
+      "createdAt": "2026-09-17T04:42:32.712Z",
+      "updatedAt": "2026-09-17T04:42:32.712Z",
+      "conversationId": "conv-test-1",
+      "sender": "assistant",
+      "content": "I reviewed the uploaded materials for this project, but there is insufficient evidence to answer your question about this topic.\n\n> ⚠️ **Evidence Notice**: The project documents do not discuss this concept. To maintain strict learning accuracy, I will not speculate based on unverified information.\n\nWould you like me to provide a general explanation using general AI knowledge, or would you like to upload related notes or papers to this project?",
+      "citations": [],
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 295,
+        "completion": 118,
+        "total": 413
+      },
+      "logId": "f35a5178-b45d-49d5-9424-5170dad25709"
+    },
+    {
+      "id": "dca1c23d-2334-45e8-9dcf-cebe29ab1222",
+      "createdAt": "2026-09-17T05:14:32.488Z",
+      "updatedAt": "2026-09-17T05:14:32.488Z",
+      "conversationId": "fda57aa6-c4d8-4828-8f61-763d82fc02c8",
+      "sender": "user",
+      "content": "Why is the dot product scaled by sqrt(d_k)?"
+    },
+    {
+      "id": "df4bc876-2322-4de2-981d-073dfb3a0526",
+      "createdAt": "2026-09-17T05:14:32.498Z",
+      "updatedAt": "2026-09-17T05:14:32.498Z",
+      "conversationId": "fda57aa6-c4d8-4828-8f61-763d82fc02c8",
+      "sender": "assistant",
+      "content": "I reviewed the uploaded materials for this project, but there is insufficient evidence to answer your question about this topic.\n\n> ⚠️ **Evidence Notice**: The project documents do not discuss this concept. To maintain strict learning accuracy, I will not speculate based on unverified information.\n\nWould you like me to provide a general explanation using general AI knowledge, or would you like to upload related notes or papers to this project?",
+      "citations": [],
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 266,
+        "completion": 118,
+        "total": 384
+      },
+      "logId": "efd909fb-fc1c-4af7-a5c0-5fb74c678914"
+    },
+    {
+      "id": "fc81e989-3b99-4eb4-8b3c-15a4a96a573e",
+      "createdAt": "2026-09-17T05:14:42.441Z",
+      "updatedAt": "2026-09-17T05:14:42.441Z",
+      "conversationId": "fda57aa6-c4d8-4828-8f61-763d82fc02c8",
+      "sender": "user",
+      "content": "Why is the dot product scaled by sqrt(d_k)?"
+    },
+    {
+      "id": "07e8c03d-50ff-405f-ba7e-191c549fe7e9",
+      "createdAt": "2026-09-17T05:14:42.447Z",
+      "updatedAt": "2026-09-17T05:14:42.447Z",
+      "conversationId": "fda57aa6-c4d8-4828-8f61-763d82fc02c8",
+      "sender": "assistant",
+      "content": "I couldn't find relevant sections in your uploaded project documents to answer this accurately.\n\n*Tip*: Upload lecture notes, textbook chapters, or PDFs in the Materials tab so I can ground answers with direct citations.",
+      "citations": [],
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 186,
+        "completion": 58,
+        "total": 244
+      },
+      "logId": "cbec0cb3-4a37-46b6-bed0-eff29b2b4cee"
+    },
+    {
+      "id": "1213a0a1-8698-456c-ac53-832110e1423a",
+      "createdAt": "2026-09-17T05:18:39.118Z",
+      "updatedAt": "2026-09-17T05:18:39.118Z",
+      "conversationId": "e7c9181b-7164-40c0-9713-d45855e72ed7",
+      "sender": "user",
+      "content": "explain unemployment in India"
+    },
+    {
+      "id": "9bd9cbdd-1ffe-407c-96d3-2b5d6826e43e",
+      "createdAt": "2026-09-17T05:18:39.140Z",
+      "updatedAt": "2026-09-17T05:18:39.141Z",
+      "conversationId": "e7c9181b-7164-40c0-9713-d45855e72ed7",
+      "sender": "assistant",
+      "content": "I reviewed the uploaded materials for this project, but there is insufficient evidence to answer your question about this topic.\n\n> ⚠️ **Evidence Notice**: The project documents do not discuss this concept. To maintain strict learning accuracy, I will not speculate based on unverified information.\n\nWould you like me to provide a general explanation using general AI knowledge, or would you like to upload related notes or papers to this project?",
+      "citations": [],
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 244,
+        "completion": 118,
+        "total": 362
+      },
+      "logId": "551e2c1a-cb12-450e-b917-4aec0c53041e"
+    },
+    {
+      "id": "257469ae-c468-4504-91b2-4ab32897f382",
+      "createdAt": "2026-09-17T05:18:56.658Z",
+      "updatedAt": "2026-09-17T05:18:56.658Z",
+      "conversationId": "e7c9181b-7164-40c0-9713-d45855e72ed7",
+      "sender": "user",
+      "content": "explain unemployment in India"
+    },
+    {
+      "id": "ad417ca9-8f36-4d8f-905e-d1032403bc63",
+      "createdAt": "2026-09-17T05:18:56.669Z",
+      "updatedAt": "2026-09-17T05:18:56.669Z",
+      "conversationId": "e7c9181b-7164-40c0-9713-d45855e72ed7",
+      "sender": "assistant",
+      "content": "I couldn't find relevant sections in your uploaded project documents to answer this accurately.\n\n*Tip*: Upload lecture notes, textbook chapters, or PDFs in the Materials tab so I can ground answers with direct citations.",
+      "citations": [],
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 167,
+        "completion": 58,
+        "total": 225
+      },
+      "logId": "faa8b3b4-dc67-4874-b14e-7d61a1623e3c"
+    },
+    {
+      "id": "82919ae0-9f21-4bd9-9138-b122af188a42",
+      "createdAt": "2026-09-17T05:58:37.672Z",
+      "updatedAt": "2026-09-17T05:58:37.672Z",
+      "conversationId": "a1516436-b2ce-472f-a46b-2a7998a3cc6b",
+      "sender": "user",
+      "content": "hii"
+    },
+    {
+      "id": "860c9d70-73af-4bf8-bd09-6fde3aae85df",
+      "createdAt": "2026-09-17T05:58:37.686Z",
+      "updatedAt": "2026-09-17T05:58:37.686Z",
+      "conversationId": "a1516436-b2ce-472f-a46b-2a7998a3cc6b",
+      "sender": "assistant",
+      "content": "I reviewed the uploaded materials for this project, but there is insufficient evidence to answer your question about this topic.\n\n> ⚠️ **Evidence Notice**: The project documents do not discuss this concept. To maintain strict learning accuracy, I will not speculate based on unverified information.\n\nWould you like me to provide a general explanation using general AI knowledge, or would you like to upload related notes or papers to this project?",
+      "citations": [],
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 237,
+        "completion": 118,
+        "total": 355
+      },
+      "logId": "2f953b01-4eda-440d-954c-28b926a5894c"
+    },
+    {
+      "id": "c4849836-68d5-4ebd-af34-0c39b25034cd",
+      "createdAt": "2026-09-17T06:02:17.585Z",
+      "updatedAt": "2026-09-17T06:02:17.585Z",
+      "conversationId": "a1516436-b2ce-472f-a46b-2a7998a3cc6b",
+      "sender": "user",
+      "content": "hii"
+    },
+    {
+      "id": "0493801a-3c99-42fe-9f4d-ff5267aee1ae",
+      "createdAt": "2026-09-17T06:02:17.589Z",
+      "updatedAt": "2026-09-17T06:02:17.589Z",
+      "conversationId": "a1516436-b2ce-472f-a46b-2a7998a3cc6b",
+      "sender": "assistant",
+      "content": "I couldn't find relevant sections in your uploaded project documents to answer this accurately.\n\n*Tip*: Upload lecture notes, textbook chapters, or PDFs in the Materials tab so I can ground answers with direct citations.",
+      "citations": [],
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 160,
+        "completion": 58,
+        "total": 218
+      },
+      "logId": "5f934597-d87e-4833-8ddb-f5c6e445d5ab"
+    },
+    {
+      "id": "e52fe069-bbec-4198-a036-5201221142dc",
+      "createdAt": "2026-09-17T06:02:29.737Z",
+      "updatedAt": "2026-09-17T06:02:29.737Z",
+      "conversationId": "a1516436-b2ce-472f-a46b-2a7998a3cc6b",
+      "sender": "user",
+      "content": "i  already uploaded right"
+    },
+    {
+      "id": "70662b97-820b-4c0f-b5af-a47d030423ec",
+      "createdAt": "2026-09-17T06:02:29.760Z",
+      "updatedAt": "2026-09-17T06:02:29.760Z",
+      "conversationId": "a1516436-b2ce-472f-a46b-2a7998a3cc6b",
+      "sender": "assistant",
+      "content": "I reviewed the uploaded materials for this project, but there is insufficient evidence to answer your question about this topic.\n\n> ⚠️ **Evidence Notice**: The project documents do not discuss this concept. To maintain strict learning accuracy, I will not speculate based on unverified information.\n\nWould you like me to provide a general explanation using general AI knowledge, or would you like to upload related notes or papers to this project?",
+      "citations": [],
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 243,
+        "completion": 118,
+        "total": 361
+      },
+      "logId": "2cf06c4b-2984-4302-8cc3-5799572d9d85"
+    },
+    {
+      "id": "8f350d7c-3890-4d1d-af17-74f6830ab9a1",
+      "createdAt": "2026-09-17T06:03:51.364Z",
+      "updatedAt": "2026-09-17T06:03:51.364Z",
+      "conversationId": "ca218187-cb43-46d1-97a3-dd66e99cfb3f",
+      "sender": "user",
+      "content": "What happens if we remove layer normalization from attention?"
+    },
+    {
+      "id": "beafd73c-f045-4f79-86b4-57fe5948737d",
+      "createdAt": "2026-09-17T06:03:51.369Z",
+      "updatedAt": "2026-09-17T06:03:51.369Z",
+      "conversationId": "ca218187-cb43-46d1-97a3-dd66e99cfb3f",
+      "sender": "assistant",
+      "content": "I reviewed the uploaded materials for this project, but there is insufficient evidence to answer your question about this topic.\n\n> ⚠️ **Evidence Notice**: The project documents do not discuss this concept. To maintain strict learning accuracy, I will not speculate based on unverified information.\n\nWould you like me to provide a general explanation using general AI knowledge, or would you like to upload related notes or papers to this project?",
+      "citations": [],
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 270,
+        "completion": 118,
+        "total": 388
+      },
+      "logId": "2f18326e-7daf-4f4a-9408-baaad8ec6f72"
+    },
+    {
+      "id": "514f4b3c-e776-4c99-9592-4c1131809282",
+      "createdAt": "2026-09-17T06:06:26.148Z",
+      "updatedAt": "2026-09-17T06:06:26.148Z",
+      "conversationId": "conv-1",
+      "sender": "user",
+      "content": "Why scale by sqrt(d_k)?"
+    },
+    {
+      "id": "ba9b42a8-1775-4111-9503-d0ffdcabb365",
+      "createdAt": "2026-09-17T06:06:26.158Z",
+      "updatedAt": "2026-09-17T06:06:26.158Z",
+      "conversationId": "conv-1",
+      "sender": "assistant",
+      "content": "Based on your project materials (**Scaled Dot-Product Attention Mechanics**):\n\nScaled Dot-Product Attention computes the compatibility of Query (Q) and Key (K) vectors, then scales by sqrt(d_k) to prevent vanishing gradients in softmax for large dimensions. The formula is Attention(Q, K, V) = softmax((Q * K^T) / sqrt(d_k)) * V. Scaling by sqrt(d_k) ensures that the variance of the dot products remains 1 when elements of Q and K have mean 0 and variance 1.\n\n### Additional Context from Multi-Head Attention Projections:\nMulti-Head Attention allows the model to jointly attend to information from different representation subspaces at different positions. Instead of performing a single attention function with d_model-dimensional queries, keys, and values, we linearly project queries, keys, and values h times with learned linear projections to d_k, d_k, and d_v dimensions respectively.\n\n### Key Takeaway:\nThis concept connects directly to your learning objectives. Understanding these foundational mechanics ensures strong retention and mastery.\n\n**Source Citation**: [Source: Transformer Architecture & Self-Attention Deep Dive.pdf — Page 3]\n**Additional Reference**: [Source: Transformer Architecture & Self-Attention Deep Dive.pdf — Page 7]",
+      "citations": [
+        {
+          "materialId": "doc-transformers-guide",
+          "materialTitle": "Transformer Architecture & Self-Attention Deep Dive.pdf",
+          "pageNumber": 3,
+          "sectionTitle": "Scaled Dot-Product Attention Mechanics",
+          "snippet": "Scaled Dot-Product Attention computes the compatibility of Query (Q) and Key (K) vectors, then scales by sqrt(d_k) to prevent vanishing gradients in softmax for large dimensions. The formula is Attent..."
+        },
+        {
+          "materialId": "doc-transformers-guide",
+          "materialTitle": "Transformer Architecture & Self-Attention Deep Dive.pdf",
+          "pageNumber": 7,
+          "sectionTitle": "Multi-Head Attention Projections",
+          "snippet": "Multi-Head Attention allows the model to jointly attend to information from different representation subspaces at different positions. Instead of performing a single attention function with d_model-di..."
+        }
+      ],
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "isGeneralKnowledge": false,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 642,
+        "completion": 329,
+        "total": 971
+      },
+      "logId": "dab32778-2efc-4421-a056-5e204d0b3d1b"
+    },
+    {
+      "id": "7a7ddd7c-d041-433c-ac5b-a2d733ae0d35",
+      "createdAt": "2026-09-17T06:06:26.171Z",
+      "updatedAt": "2026-09-17T06:06:26.171Z",
+      "conversationId": "conv-1",
+      "sender": "user",
+      "content": "What is photosynthesis?"
+    },
+    {
+      "id": "1bf8de00-1ec1-4734-aa5b-4f9cd7b72669",
+      "createdAt": "2026-09-17T06:06:26.176Z",
+      "updatedAt": "2026-09-17T06:06:26.176Z",
+      "conversationId": "conv-1",
+      "sender": "assistant",
+      "content": "> 💡 **General AI Knowledge Notice**: This explanation is synthesized using general AI knowledge because specific references were not found in your uploaded project materials.\n\n### Overview of What is photosynthesis?\nIn foundational computing and scientific theory, **What is photosynthesis?** represents a key concept with broad applicability across systems, modeling, and analytical frameworks.\n\n### Key Principles & Mechanics:\n- **Fundamental Formulation**: Operates by establishing clear functional boundaries, invariant conditions, and optimized transformation steps.\n- **Tradeoffs & Practical Use**: Balances computational complexity against accuracy, ensuring robustness across diverse environments.\n- **Best Practices**: Verify underlying data assumptions and apply standard validation methodologies.\n\n*Tip*: If this topic is part of your core syllabus, consider uploading relevant reference notes so future answers include direct page citations!",
+      "citations": [],
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "isGeneralKnowledge": true,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 459,
+        "completion": 252,
+        "total": 711
+      },
+      "logId": "6b4217fa-48ce-43d1-836f-b920f450cccf"
+    },
+    {
+      "id": "ff5b9143-50da-4a43-9223-650460f8aa5a",
+      "createdAt": "2026-09-17T06:10:10.259Z",
+      "updatedAt": "2026-09-17T06:10:10.259Z",
+      "conversationId": "e7c9181b-7164-40c0-9713-d45855e72ed7",
+      "sender": "user",
+      "content": "explain unemployment in India"
+    },
+    {
+      "id": "041f04fb-668c-4ca8-8e9c-2f99ca0eb944",
+      "createdAt": "2026-09-17T06:10:10.269Z",
+      "updatedAt": "2026-09-17T06:10:10.269Z",
+      "conversationId": "e7c9181b-7164-40c0-9713-d45855e72ed7",
+      "sender": "assistant",
+      "content": "I reviewed the uploaded study materials for **Economic policies in India**, but there is insufficient evidence to answer your question accurately.\n\n> ⚠️ **Evidence Notice**: The project documents do not contain information on this topic. To ensure strict learning accuracy and avoid hallucination, I only answer using verified content from your uploaded materials.\n\n**What you can do next**:\n1. Enable **\"General AI Knowledge\"** if you'd like me to explain this concept using general AI knowledge.\n2. Upload lecture slides, papers, or textbook chapters in the **Materials** tab.",
+      "citations": [],
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "isGeneralKnowledge": false,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 259,
+        "completion": 153,
+        "total": 412
+      },
+      "logId": "7664d7ac-8535-4d76-baf3-d9d3c805d1c4"
+    },
+    {
+      "id": "348226da-bf8c-44ef-8af1-9950fcb11f92",
+      "createdAt": "2026-09-17T06:10:14.267Z",
+      "updatedAt": "2026-09-17T06:10:14.267Z",
+      "conversationId": "e7c9181b-7164-40c0-9713-d45855e72ed7",
+      "sender": "user",
+      "content": "explain unemployment in India"
+    },
+    {
+      "id": "87cf734c-f388-4aab-9c48-79594e999563",
+      "createdAt": "2026-09-17T06:10:14.274Z",
+      "updatedAt": "2026-09-17T06:10:14.274Z",
+      "conversationId": "e7c9181b-7164-40c0-9713-d45855e72ed7",
+      "sender": "assistant",
+      "content": "> 💡 **General AI Knowledge Notice**: This explanation is synthesized using general AI knowledge because specific references were not found in your uploaded project materials.\n\n### Overview of explain unemployment in India\nIn foundational computing and scientific theory, **explain unemployment in India** represents a key concept with broad applicability across systems, modeling, and analytical frameworks.\n\n### Key Principles & Mechanics:\n- **Fundamental Formulation**: Operates by establishing clear functional boundaries, invariant conditions, and optimized transformation steps.\n- **Tradeoffs & Practical Use**: Balances computational complexity against accuracy, ensuring robustness across diverse environments.\n- **Best Practices**: Verify underlying data assumptions and apply standard validation methodologies.\n\n*Tip*: If this topic is part of your core syllabus, consider uploading relevant reference notes so future answers include direct page citations!",
+      "citations": [],
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "isGeneralKnowledge": true,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 489,
+        "completion": 255,
+        "total": 744
+      },
+      "logId": "535847b3-4c31-4969-bb0b-9c1466658340"
+    },
+    {
+      "id": "049eea11-72d9-4616-a7c0-b25d5e5f936b",
+      "createdAt": "2026-09-18T10:48:35.540Z",
+      "updatedAt": "2026-09-18T10:48:35.540Z",
+      "conversationId": "2b13e2d5-8e36-49a3-af39-378eca7dd039",
+      "sender": "user",
+      "content": "hii"
+    },
+    {
+      "id": "cad360f7-f247-4e43-955c-a7bb9244cb93",
+      "createdAt": "2026-09-18T10:48:35.564Z",
+      "updatedAt": "2026-09-18T10:48:35.564Z",
+      "conversationId": "2b13e2d5-8e36-49a3-af39-378eca7dd039",
+      "sender": "assistant",
+      "content": "I reviewed the uploaded study materials for **EPI**, but there is insufficient evidence to answer your question accurately.\n\n> ⚠️ **Evidence Notice**: The project documents do not contain information on this topic. To ensure strict learning accuracy and avoid hallucination, I only answer using verified content from your uploaded materials.\n\n**What you can do next**:\n1. Enable **\"General AI Knowledge\"** if you'd like me to explain this concept using general AI knowledge.\n2. Upload lecture slides, papers, or textbook chapters in the **Materials** tab.",
+      "citations": [],
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "isGeneralKnowledge": false,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 239,
+        "completion": 147,
+        "total": 386
+      },
+      "logId": "a698f5ef-83bd-4857-9f62-9b0b67572329"
+    },
+    {
+      "id": "4d6f3de2-e9d2-44e5-898a-a0f4f923d994",
+      "createdAt": "2026-09-18T10:48:40.472Z",
+      "updatedAt": "2026-09-18T10:48:40.472Z",
+      "conversationId": "2b13e2d5-8e36-49a3-af39-378eca7dd039",
+      "sender": "user",
+      "content": "how r u"
+    },
+    {
+      "id": "e3fea077-0442-419c-9bda-b28192495cb0",
+      "createdAt": "2026-09-18T10:48:40.488Z",
+      "updatedAt": "2026-09-18T10:48:40.488Z",
+      "conversationId": "2b13e2d5-8e36-49a3-af39-378eca7dd039",
+      "sender": "assistant",
+      "content": "I reviewed the uploaded study materials for **EPI**, but there is insufficient evidence to answer your question accurately.\n\n> ⚠️ **Evidence Notice**: The project documents do not contain information on this topic. To ensure strict learning accuracy and avoid hallucination, I only answer using verified content from your uploaded materials.\n\n**What you can do next**:\n1. Enable **\"General AI Knowledge\"** if you'd like me to explain this concept using general AI knowledge.\n2. Upload lecture slides, papers, or textbook chapters in the **Materials** tab.",
+      "citations": [],
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "isGeneralKnowledge": false,
+      "latencyMs": 0,
+      "tokenUsage": {
+        "prompt": 240,
+        "completion": 147,
+        "total": 387
+      },
+      "logId": "ec7549cf-24d0-40a9-83e2-0caafcda1af7"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "quiz-1",
+      "projectId": "proj-transformers",
+      "userId": "user-1",
+      "title": "Adaptive Assessment: Attention Mechanics & Encodings",
+      "status": "completed",
+      "score": 78,
+      "totalQuestions": 3,
+      "createdAt": "2026-09-16T04:17:08.137Z"
+    },
+    {
+      "id": "e08d9897-5828-4b9c-b86e-9c6534084106",
+      "createdAt": "2026-09-17T04:17:08.179Z",
+      "updatedAt": "2026-09-17T04:17:08.179Z",
+      "projectId": "proj-transformers",
+      "userId": "user-1",
+      "title": "Adaptive Assessment: Positional Encoding (RoPE) & FlashAttention & SRAM Tiling",
+      "status": "in_progress",
+      "score": null,
+      "totalQuestions": 2
+    },
+    {
+      "id": "cc26f1a5-de51-43fc-9dab-8d3e931fb8d9",
+      "createdAt": "2026-09-17T04:17:33.382Z",
+      "updatedAt": "2026-09-17T04:17:33.382Z",
+      "projectId": "proj-transformers",
+      "userId": "user-1",
+      "title": "Adaptive Assessment: FlashAttention & SRAM Tiling & Positional Encoding (RoPE)",
+      "status": "in_progress",
+      "score": null,
+      "totalQuestions": 2
+    },
+    {
+      "id": "7a53e874-7fa5-4acf-b9ce-4031189ccd6f",
+      "createdAt": "2026-09-17T04:42:32.717Z",
+      "updatedAt": "2026-09-17T04:42:32.717Z",
+      "projectId": "proj-transformers",
+      "userId": "user-1",
+      "title": "Adaptive Assessment: Positional Encoding (RoPE) & FlashAttention & SRAM Tiling",
+      "status": "in_progress",
+      "score": null,
+      "totalQuestions": 2
+    },
+    {
+      "id": "a413854e-8f5f-40ce-85c9-800c19286282",
+      "createdAt": "2026-09-17T04:59:20.212Z",
+      "updatedAt": "2026-09-17T04:59:20.212Z",
+      "projectId": "proj-transformers",
+      "userId": "user-1",
+      "title": "Adaptive Assessment: FlashAttention & SRAM Tiling & KV Cache Optimization",
+      "status": "in_progress",
+      "score": null,
+      "totalQuestions": 3
+    },
+    {
+      "id": "610754f5-9347-43b4-83e3-ce7284eb028d",
+      "createdAt": "2026-09-17T06:06:26.113Z",
+      "updatedAt": "2026-09-17T06:06:26.114Z",
+      "projectId": "proj-transformers",
+      "userId": "user-1",
+      "title": "Adaptive Assessment: FlashAttention & SRAM Tiling & KV Cache Optimization",
+      "status": "in_progress",
+      "score": null,
+      "totalQuestions": 2
+    },
+    {
+      "id": "613e0c16-c6a2-494d-9e41-e1a814920d8b",
+      "createdAt": "2026-09-17T06:07:02.194Z",
+      "updatedAt": "2026-09-17T06:07:02.194Z",
+      "projectId": "500aa7b0-b556-45ba-8459-7b37a1bcd598",
+      "userId": "user-1",
+      "title": "Adaptive Assessment: Quantum Mechanics Fundamentals & Quantum Mechanics Operational Mechanics",
+      "status": "in_progress",
+      "score": null,
+      "totalQuestions": 2
+    },
+    {
+      "id": "f0a51c76-c2de-42b0-bc82-13e7a7295ffe",
+      "createdAt": "2026-09-17T06:07:34.058Z",
+      "updatedAt": "2026-09-17T06:08:10.258Z",
+      "projectId": "proj-raft",
+      "userId": "user-1",
+      "title": "Adaptive Assessment: Raft Consensus & Replicated State Machines - Fundamentals & Raft Consensus & Replicated State Machines - Operational Mechanics",
+      "status": "completed",
+      "score": 53,
+      "totalQuestions": 3,
+      "completedAt": "2026-09-17T06:08:10.258Z"
+    },
+    {
+      "id": "a92a76f2-93e1-49d5-9083-cdb9f8377067",
+      "createdAt": "2026-09-17T06:08:12.709Z",
+      "updatedAt": "2026-09-17T06:08:12.709Z",
+      "projectId": "proj-raft",
+      "userId": "user-1",
+      "title": "Adaptive Assessment: Raft Consensus & Replicated State Machines - Operational Mechanics & Raft Consensus & Replicated State Machines - Core Architecture & Tradeoffs",
+      "status": "in_progress",
+      "score": null,
+      "totalQuestions": 3
+    },
+    {
+      "id": "824b6e77-1227-419d-9c0a-4a9f532f959f",
+      "createdAt": "2026-09-17T06:09:03.988Z",
+      "updatedAt": "2026-09-17T06:09:38.185Z",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "userId": "user-1",
+      "title": "Adaptive Assessment: Economic policies in India - Fundamentals & Economic policies in India - Operational Mechanics",
+      "status": "completed",
+      "score": 86,
+      "totalQuestions": 3,
+      "completedAt": "2026-09-17T06:09:38.185Z"
+    },
+    {
+      "id": "71515a73-8c80-408d-af0b-bf7c44de62cc",
+      "createdAt": "2026-09-18T10:47:00.777Z",
+      "updatedAt": "2026-09-18T10:47:44.446Z",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "title": "Adaptive Assessment: EPI Fundamentals & EPI Operational Mechanics",
+      "status": "completed",
+      "score": 53,
+      "totalQuestions": 3,
+      "completedAt": "2026-09-18T10:47:44.446Z"
+    }
+  ],
+  "quiz_questions": [
+    {
+      "id": "q-1",
+      "quizId": "quiz-1",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-1",
+      "conceptName": "Scaled Dot-Product Attention",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "prompt": "What happens to the variance of the dot product between two d_k-dimensional vectors with zero mean and unit variance?",
+      "options": [
+        "The variance remains 1 regardless of d_k",
+        "The variance grows proportionally to d_k",
+        "The variance shrinks to 1 / d_k",
+        "The variance approaches zero"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The sum of d_k independent unit variance products has a total variance of d_k. Dividing by sqrt(d_k) rescales the variance back to 1.",
+      "userAnswer": 1,
+      "isCorrect": true
+    },
+    {
+      "id": "q-2",
+      "quizId": "quiz-1",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-3",
+      "conceptName": "Positional Encoding (RoPE)",
+      "type": "open_ended",
+      "difficulty": "hard",
+      "prompt": "Explain how Rotary Position Embedding (RoPE) preserves relative distance between tokens without using a lookup table.",
+      "rubric": {
+        "understandingWeight": 30,
+        "accuracyWeight": 30,
+        "keyConceptsWeight": 20,
+        "reasoningWeight": 20
+      },
+      "userAnswer": "RoPE rotates the query and key vectors in 2D chunks using complex numbers based on token position m. When you take the inner product of Query at position m and Key at position n, the position angle becomes (m - n), so it naturally depends on relative distance.",
+      "aiEvaluation": {
+        "score": 85,
+        "understanding": "Strong grasp of the complex 2D rotation mechanism and inner product angle subtraction property.",
+        "accuracy": "Accurate description of the angle delta (m - n).",
+        "keyConceptsCovered": [
+          "2D rotation in complex space",
+          "Inner product invariance to absolute shift",
+          "Relative position delta (m - n)"
+        ],
+        "missingConcepts": [
+          "Did not mention length generalization or decayed attention with increased relative distance"
+        ],
+        "reasoningScore": 88
+      }
+    },
+    {
+      "id": "0e626ab5-534a-4306-a053-7fc4a3dfcd97",
+      "createdAt": "2026-09-17T04:17:08.184Z",
+      "updatedAt": "2026-09-17T04:17:08.190Z",
+      "quizId": "e08d9897-5828-4b9c-b86e-9c6534084106",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-3",
+      "conceptName": "Positional Encoding (RoPE)",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "prompt": "In the context of Positional Encoding (RoPE), which factor is most crucial for maintaining stability and optimal throughput?",
+      "options": [
+        "Proper mathematical scaling to prevent gradient degradation in Positional Encoding (RoPE)",
+        "Increasing the parameter count without normalization",
+        "Removing all residual connections in the layer",
+        "Bypassing memory caching altogether"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling and normalization are fundamental to preserving gradient flow and computational stability in Positional Encoding (RoPE).",
+      "rubric": null,
+      "userAnswer": 0,
+      "isCorrect": true,
+      "aiEvaluation": null
+    },
+    {
+      "id": "1e49d4bb-616c-4419-810a-016158c27806",
+      "createdAt": "2026-09-17T04:17:08.188Z",
+      "updatedAt": "2026-09-17T04:17:08.188Z",
+      "quizId": "e08d9897-5828-4b9c-b86e-9c6534084106",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-5",
+      "conceptName": "FlashAttention & SRAM Tiling",
+      "type": "open_ended",
+      "difficulty": "medium",
+      "prompt": "In the context of FlashAttention & SRAM Tiling, which factor is most crucial for maintaining stability and optimal throughput?",
+      "options": [
+        "Proper mathematical scaling to prevent gradient degradation in FlashAttention & SRAM Tiling",
+        "Increasing the parameter count without normalization",
+        "Removing all residual connections in the layer",
+        "Bypassing memory caching altogether"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling and normalization are fundamental to preserving gradient flow and computational stability in FlashAttention & SRAM Tiling.",
+      "rubric": null,
+      "userAnswer": null,
+      "isCorrect": null,
+      "aiEvaluation": null
+    },
+    {
+      "id": "15628cbf-b16f-4abf-9593-3201c22253f0",
+      "createdAt": "2026-09-17T04:17:33.396Z",
+      "updatedAt": "2026-09-17T04:17:33.402Z",
+      "quizId": "cc26f1a5-de51-43fc-9dab-8d3e931fb8d9",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-5",
+      "conceptName": "FlashAttention & SRAM Tiling",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "prompt": "In the context of FlashAttention & SRAM Tiling, which factor is most crucial for maintaining stability and optimal throughput?",
+      "options": [
+        "Proper mathematical scaling to prevent gradient degradation in FlashAttention & SRAM Tiling",
+        "Increasing the parameter count without normalization",
+        "Removing all residual connections in the layer",
+        "Bypassing memory caching altogether"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling and normalization are fundamental to preserving gradient flow and computational stability in FlashAttention & SRAM Tiling.",
+      "rubric": null,
+      "userAnswer": 0,
+      "isCorrect": true,
+      "aiEvaluation": null
+    },
+    {
+      "id": "cb1b7642-229b-4bae-b266-447d9cb00109",
+      "createdAt": "2026-09-17T04:17:33.400Z",
+      "updatedAt": "2026-09-17T04:17:33.400Z",
+      "quizId": "cc26f1a5-de51-43fc-9dab-8d3e931fb8d9",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-3",
+      "conceptName": "Positional Encoding (RoPE)",
+      "type": "open_ended",
+      "difficulty": "medium",
+      "prompt": "In the context of Positional Encoding (RoPE), which factor is most crucial for maintaining stability and optimal throughput?",
+      "options": [
+        "Proper mathematical scaling to prevent gradient degradation in Positional Encoding (RoPE)",
+        "Increasing the parameter count without normalization",
+        "Removing all residual connections in the layer",
+        "Bypassing memory caching altogether"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling and normalization are fundamental to preserving gradient flow and computational stability in Positional Encoding (RoPE).",
+      "rubric": null,
+      "userAnswer": null,
+      "isCorrect": null,
+      "aiEvaluation": null
+    },
+    {
+      "id": "aee32017-36c0-4c13-a435-3f6707c83e36",
+      "createdAt": "2026-09-17T04:42:32.721Z",
+      "updatedAt": "2026-09-17T04:42:32.726Z",
+      "quizId": "7a53e874-7fa5-4acf-b9ce-4031189ccd6f",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-3",
+      "conceptName": "Positional Encoding (RoPE)",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "prompt": "In the context of Positional Encoding (RoPE), which factor is most crucial for maintaining stability and optimal throughput?",
+      "options": [
+        "Proper mathematical scaling to prevent gradient degradation in Positional Encoding (RoPE)",
+        "Increasing the parameter count without normalization",
+        "Removing all residual connections in the layer",
+        "Bypassing memory caching altogether"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling and normalization are fundamental to preserving gradient flow and computational stability in Positional Encoding (RoPE).",
+      "rubric": null,
+      "userAnswer": 0,
+      "isCorrect": true,
+      "aiEvaluation": null
+    },
+    {
+      "id": "813b0d2a-4e90-458f-a149-9f0dbcd9ea59",
+      "createdAt": "2026-09-17T04:42:32.724Z",
+      "updatedAt": "2026-09-17T04:42:32.724Z",
+      "quizId": "7a53e874-7fa5-4acf-b9ce-4031189ccd6f",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-5",
+      "conceptName": "FlashAttention & SRAM Tiling",
+      "type": "open_ended",
+      "difficulty": "medium",
+      "prompt": "In the context of FlashAttention & SRAM Tiling, which factor is most crucial for maintaining stability and optimal throughput?",
+      "options": [
+        "Proper mathematical scaling to prevent gradient degradation in FlashAttention & SRAM Tiling",
+        "Increasing the parameter count without normalization",
+        "Removing all residual connections in the layer",
+        "Bypassing memory caching altogether"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling and normalization are fundamental to preserving gradient flow and computational stability in FlashAttention & SRAM Tiling.",
+      "rubric": null,
+      "userAnswer": null,
+      "isCorrect": null,
+      "aiEvaluation": null
+    },
+    {
+      "id": "7a7a4f63-8d08-41eb-93d7-ac3ee64ce75a",
+      "createdAt": "2026-09-17T04:59:20.231Z",
+      "updatedAt": "2026-09-17T04:59:20.231Z",
+      "quizId": "a413854e-8f5f-40ce-85c9-800c19286282",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-5",
+      "conceptName": "FlashAttention & SRAM Tiling",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "prompt": "In the context of FlashAttention & SRAM Tiling, which factor is most crucial for maintaining stability and optimal throughput?",
+      "options": [
+        "Proper mathematical scaling to prevent gradient degradation in FlashAttention & SRAM Tiling",
+        "Increasing the parameter count without normalization",
+        "Removing all residual connections in the layer",
+        "Bypassing memory caching altogether"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling and normalization are fundamental to preserving gradient flow and computational stability in FlashAttention & SRAM Tiling.",
+      "rubric": null,
+      "userAnswer": null,
+      "isCorrect": null,
+      "aiEvaluation": null
+    },
+    {
+      "id": "b6f5d6b2-5a98-4342-82e5-59a801949699",
+      "createdAt": "2026-09-17T04:59:20.234Z",
+      "updatedAt": "2026-09-17T04:59:20.234Z",
+      "quizId": "a413854e-8f5f-40ce-85c9-800c19286282",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-4",
+      "conceptName": "KV Cache Optimization",
+      "type": "open_ended",
+      "difficulty": "medium",
+      "prompt": "In the context of KV Cache Optimization, which factor is most crucial for maintaining stability and optimal throughput?",
+      "options": [
+        "Proper mathematical scaling to prevent gradient degradation in KV Cache Optimization",
+        "Increasing the parameter count without normalization",
+        "Removing all residual connections in the layer",
+        "Bypassing memory caching altogether"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling and normalization are fundamental to preserving gradient flow and computational stability in KV Cache Optimization.",
+      "rubric": null,
+      "userAnswer": null,
+      "isCorrect": null,
+      "aiEvaluation": null
+    },
+    {
+      "id": "d6225215-3f0f-42b0-b4c2-792563ed469a",
+      "createdAt": "2026-09-17T04:59:20.240Z",
+      "updatedAt": "2026-09-17T04:59:20.240Z",
+      "quizId": "a413854e-8f5f-40ce-85c9-800c19286282",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-3",
+      "conceptName": "Positional Encoding (RoPE)",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "prompt": "In the context of Positional Encoding (RoPE), which factor is most crucial for maintaining stability and optimal throughput?",
+      "options": [
+        "Proper mathematical scaling to prevent gradient degradation in Positional Encoding (RoPE)",
+        "Increasing the parameter count without normalization",
+        "Removing all residual connections in the layer",
+        "Bypassing memory caching altogether"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling and normalization are fundamental to preserving gradient flow and computational stability in Positional Encoding (RoPE).",
+      "rubric": null,
+      "userAnswer": null,
+      "isCorrect": null,
+      "aiEvaluation": null
+    },
+    {
+      "id": "e101f6d4-d2db-4eda-9b9f-0892125b3ca3",
+      "createdAt": "2026-09-17T06:06:26.119Z",
+      "updatedAt": "2026-09-17T06:06:26.119Z",
+      "quizId": "610754f5-9347-43b4-83e3-ce7284eb028d",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-5",
+      "conceptName": "FlashAttention & SRAM Tiling",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "prompt": "In the context of FlashAttention & SRAM Tiling, which factor is most crucial for maintaining stability and optimal learning performance?",
+      "options": [
+        "Proper mathematical scaling and normalization to preserve stability in FlashAttention & SRAM Tiling",
+        "Increasing parameter count arbitrarily without structural constraints",
+        "Removing all residual and feedback connections",
+        "Bypassing error checking and gradient verification"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling, normalization, and feedback mechanisms are essential for preserving computational stability and numerical robustness in FlashAttention & SRAM Tiling.",
+      "rubric": null,
+      "userAnswer": null,
+      "isCorrect": null,
+      "aiEvaluation": null
+    },
+    {
+      "id": "dbffd133-aa9f-4bfe-926e-f378982c527a",
+      "createdAt": "2026-09-17T06:06:26.122Z",
+      "updatedAt": "2026-09-17T06:06:26.122Z",
+      "quizId": "610754f5-9347-43b4-83e3-ce7284eb028d",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-4",
+      "conceptName": "KV Cache Optimization",
+      "type": "open_ended",
+      "difficulty": "medium",
+      "prompt": "In the context of KV Cache Optimization, which factor is most crucial for maintaining stability and optimal learning performance?",
+      "options": [
+        "Proper mathematical scaling and normalization to preserve stability in KV Cache Optimization",
+        "Increasing parameter count arbitrarily without structural constraints",
+        "Removing all residual and feedback connections",
+        "Bypassing error checking and gradient verification"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling, normalization, and feedback mechanisms are essential for preserving computational stability and numerical robustness in KV Cache Optimization.",
+      "rubric": null,
+      "userAnswer": null,
+      "isCorrect": null,
+      "aiEvaluation": null
+    },
+    {
+      "id": "9bb59778-8f37-4e09-9f9f-18be763e84b6",
+      "createdAt": "2026-09-17T06:07:02.203Z",
+      "updatedAt": "2026-09-17T06:07:02.203Z",
+      "quizId": "613e0c16-c6a2-494d-9e41-e1a814920d8b",
+      "projectId": "500aa7b0-b556-45ba-8459-7b37a1bcd598",
+      "conceptId": "2fde0941-382f-4503-a4ab-6b569249d8f2",
+      "conceptName": "Quantum Mechanics Fundamentals",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "prompt": "In the context of Quantum Mechanics Fundamentals, which factor is most crucial for maintaining stability and optimal learning performance?",
+      "options": [
+        "Proper mathematical scaling and normalization to preserve stability in Quantum Mechanics Fundamentals",
+        "Increasing parameter count arbitrarily without structural constraints",
+        "Removing all residual and feedback connections",
+        "Bypassing error checking and gradient verification"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling, normalization, and feedback mechanisms are essential for preserving computational stability and numerical robustness in Quantum Mechanics Fundamentals.",
+      "rubric": null,
+      "userAnswer": null,
+      "isCorrect": null,
+      "aiEvaluation": null
+    },
+    {
+      "id": "ae134ae4-6d8e-4d6a-b126-8a090c7fa127",
+      "createdAt": "2026-09-17T06:07:02.212Z",
+      "updatedAt": "2026-09-17T06:07:02.212Z",
+      "quizId": "613e0c16-c6a2-494d-9e41-e1a814920d8b",
+      "projectId": "500aa7b0-b556-45ba-8459-7b37a1bcd598",
+      "conceptId": "7148cdce-333e-41aa-aecc-919274e0416e",
+      "conceptName": "Quantum Mechanics Operational Mechanics",
+      "type": "open_ended",
+      "difficulty": "medium",
+      "prompt": "In the context of Quantum Mechanics Operational Mechanics, which factor is most crucial for maintaining stability and optimal learning performance?",
+      "options": [
+        "Proper mathematical scaling and normalization to preserve stability in Quantum Mechanics Operational Mechanics",
+        "Increasing parameter count arbitrarily without structural constraints",
+        "Removing all residual and feedback connections",
+        "Bypassing error checking and gradient verification"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling, normalization, and feedback mechanisms are essential for preserving computational stability and numerical robustness in Quantum Mechanics Operational Mechanics.",
+      "rubric": null,
+      "userAnswer": null,
+      "isCorrect": null,
+      "aiEvaluation": null
+    },
+    {
+      "id": "6ebf0ffa-6fba-49e0-8934-8bf0e546d9f3",
+      "createdAt": "2026-09-17T06:07:34.063Z",
+      "updatedAt": "2026-09-17T06:07:40.576Z",
+      "quizId": "f0a51c76-c2de-42b0-bc82-13e7a7295ffe",
+      "projectId": "proj-raft",
+      "conceptId": "e1613ed0-eb48-4ab5-b1b5-02fa4a413571",
+      "conceptName": "Raft Consensus & Replicated State Machines - Fundamentals",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "prompt": "In the context of Raft Consensus & Replicated State Machines - Fundamentals, which factor is most crucial for maintaining stability and optimal learning performance?",
+      "options": [
+        "Proper mathematical scaling and normalization to preserve stability in Raft Consensus & Replicated State Machines - Fundamentals",
+        "Increasing parameter count arbitrarily without structural constraints",
+        "Removing all residual and feedback connections",
+        "Bypassing error checking and gradient verification"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling, normalization, and feedback mechanisms are essential for preserving computational stability and numerical robustness in Raft Consensus & Replicated State Machines - Fundamentals.",
+      "rubric": null,
+      "userAnswer": 0,
+      "isCorrect": true,
+      "aiEvaluation": null
+    },
+    {
+      "id": "e1fd3115-3b76-468d-b448-ef59c70f1367",
+      "createdAt": "2026-09-17T06:07:34.067Z",
+      "updatedAt": "2026-09-17T06:07:52.078Z",
+      "quizId": "f0a51c76-c2de-42b0-bc82-13e7a7295ffe",
+      "projectId": "proj-raft",
+      "conceptId": "56c94b76-5479-4a19-91b3-83fdbe045013",
+      "conceptName": "Raft Consensus & Replicated State Machines - Operational Mechanics",
+      "type": "open_ended",
+      "difficulty": "medium",
+      "prompt": "In the context of Raft Consensus & Replicated State Machines - Operational Mechanics, which factor is most crucial for maintaining stability and optimal learning performance?",
+      "options": [
+        "Proper mathematical scaling and normalization to preserve stability in Raft Consensus & Replicated State Machines - Operational Mechanics",
+        "Increasing parameter count arbitrarily without structural constraints",
+        "Removing all residual and feedback connections",
+        "Bypassing error checking and gradient verification"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling, normalization, and feedback mechanisms are essential for preserving computational stability and numerical robustness in Raft Consensus & Replicated State Machines - Operational Mechanics.",
+      "rubric": null,
+      "userAnswer": "kiu",
+      "isCorrect": false,
+      "aiEvaluation": {
+        "score": 58,
+        "understanding": "Basic mention of the concept, but lacks depth and structural explanation.",
+        "accuracy": "Partially accurate, but missing key mechanical details.",
+        "keyConceptsCovered": [
+          "Raft Consensus & Replicated State Machines - Operational Mechanics"
+        ],
+        "missingConcepts": [
+          "Detailed mechanics",
+          "Mathematical foundation"
+        ],
+        "reasoningScore": 62
+      }
+    },
+    {
+      "id": "c9b0cec4-a5c8-4feb-bde7-aa79cfcc67bf",
+      "createdAt": "2026-09-17T06:07:34.072Z",
+      "updatedAt": "2026-09-17T06:08:07.557Z",
+      "quizId": "f0a51c76-c2de-42b0-bc82-13e7a7295ffe",
+      "projectId": "proj-raft",
+      "conceptId": "b34eaa31-825d-4b1f-bba2-c18bbf22e93c",
+      "conceptName": "Raft Consensus & Replicated State Machines - Core Architecture & Tradeoffs",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "prompt": "In the context of Raft Consensus & Replicated State Machines - Core Architecture & Tradeoffs, which factor is most crucial for maintaining stability and optimal learning performance?",
+      "options": [
+        "Proper mathematical scaling and normalization to preserve stability in Raft Consensus & Replicated State Machines - Core Architecture & Tradeoffs",
+        "Increasing parameter count arbitrarily without structural constraints",
+        "Removing all residual and feedback connections",
+        "Bypassing error checking and gradient verification"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling, normalization, and feedback mechanisms are essential for preserving computational stability and numerical robustness in Raft Consensus & Replicated State Machines - Core Architecture & Tradeoffs.",
+      "rubric": null,
+      "userAnswer": 1,
+      "isCorrect": false,
+      "aiEvaluation": null
+    },
+    {
+      "id": "0bc2b1a3-c8d7-4576-ab8d-002c3102c8f2",
+      "createdAt": "2026-09-17T06:08:12.714Z",
+      "updatedAt": "2026-09-17T06:08:18.139Z",
+      "quizId": "a92a76f2-93e1-49d5-9083-cdb9f8377067",
+      "projectId": "proj-raft",
+      "conceptId": "56c94b76-5479-4a19-91b3-83fdbe045013",
+      "conceptName": "Raft Consensus & Replicated State Machines - Operational Mechanics",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "prompt": "In the context of Raft Consensus & Replicated State Machines - Operational Mechanics, which factor is most crucial for maintaining stability and optimal learning performance?",
+      "options": [
+        "Proper mathematical scaling and normalization to preserve stability in Raft Consensus & Replicated State Machines - Operational Mechanics",
+        "Increasing parameter count arbitrarily without structural constraints",
+        "Removing all residual and feedback connections",
+        "Bypassing error checking and gradient verification"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling, normalization, and feedback mechanisms are essential for preserving computational stability and numerical robustness in Raft Consensus & Replicated State Machines - Operational Mechanics.",
+      "rubric": null,
+      "userAnswer": 2,
+      "isCorrect": false,
+      "aiEvaluation": null
+    },
+    {
+      "id": "59ac5f09-facd-4fc7-9003-659f40fb6ac7",
+      "createdAt": "2026-09-17T06:08:12.722Z",
+      "updatedAt": "2026-09-17T06:08:35.842Z",
+      "quizId": "a92a76f2-93e1-49d5-9083-cdb9f8377067",
+      "projectId": "proj-raft",
+      "conceptId": "b34eaa31-825d-4b1f-bba2-c18bbf22e93c",
+      "conceptName": "Raft Consensus & Replicated State Machines - Core Architecture & Tradeoffs",
+      "type": "open_ended",
+      "difficulty": "easy",
+      "prompt": "In the context of Raft Consensus & Replicated State Machines - Core Architecture & Tradeoffs, which factor is most crucial for maintaining stability and optimal learning performance?",
+      "options": [
+        "Proper mathematical scaling and normalization to preserve stability in Raft Consensus & Replicated State Machines - Core Architecture & Tradeoffs",
+        "Increasing parameter count arbitrarily without structural constraints",
+        "Removing all residual and feedback connections",
+        "Bypassing error checking and gradient verification"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling, normalization, and feedback mechanisms are essential for preserving computational stability and numerical robustness in Raft Consensus & Replicated State Machines - Core Architecture & Tradeoffs.",
+      "rubric": null,
+      "userAnswer": "bjjhiuyhhhhhhhhhhhhhhhhhhhh",
+      "isCorrect": false,
+      "aiEvaluation": {
+        "score": 58,
+        "understanding": "Basic mention of the concept, but lacks depth and structural explanation.",
+        "accuracy": "Partially accurate, but missing key mechanical details.",
+        "keyConceptsCovered": [
+          "Raft Consensus & Replicated State Machines - Core Architecture & Tradeoffs"
+        ],
+        "missingConcepts": [
+          "Detailed mechanics",
+          "Mathematical foundation"
+        ],
+        "reasoningScore": 62
+      }
+    },
+    {
+      "id": "03ace54a-6d01-44a7-b4bb-6537647bf20b",
+      "createdAt": "2026-09-17T06:08:12.730Z",
+      "updatedAt": "2026-09-17T06:08:45.939Z",
+      "quizId": "a92a76f2-93e1-49d5-9083-cdb9f8377067",
+      "projectId": "proj-raft",
+      "conceptId": "e1613ed0-eb48-4ab5-b1b5-02fa4a413571",
+      "conceptName": "Raft Consensus & Replicated State Machines - Fundamentals",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "prompt": "In the context of Raft Consensus & Replicated State Machines - Fundamentals, which factor is most crucial for maintaining stability and optimal learning performance?",
+      "options": [
+        "Proper mathematical scaling and normalization to preserve stability in Raft Consensus & Replicated State Machines - Fundamentals",
+        "Increasing parameter count arbitrarily without structural constraints",
+        "Removing all residual and feedback connections",
+        "Bypassing error checking and gradient verification"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling, normalization, and feedback mechanisms are essential for preserving computational stability and numerical robustness in Raft Consensus & Replicated State Machines - Fundamentals.",
+      "rubric": null,
+      "userAnswer": 3,
+      "isCorrect": false,
+      "aiEvaluation": null
+    },
+    {
+      "id": "727657e0-9b2f-4eef-adbd-228a1e435620",
+      "createdAt": "2026-09-17T06:09:03.994Z",
+      "updatedAt": "2026-09-17T06:09:21.908Z",
+      "quizId": "824b6e77-1227-419d-9c0a-4a9f532f959f",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "conceptId": "aae1ae1e-8d14-414b-9cc7-60a9f77840bc",
+      "conceptName": "Economic policies in India - Fundamentals",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "prompt": "In the context of Economic policies in India - Fundamentals, which factor is most crucial for maintaining stability and optimal learning performance?",
+      "options": [
+        "Proper mathematical scaling and normalization to preserve stability in Economic policies in India - Fundamentals",
+        "Increasing parameter count arbitrarily without structural constraints",
+        "Removing all residual and feedback connections",
+        "Bypassing error checking and gradient verification"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling, normalization, and feedback mechanisms are essential for preserving computational stability and numerical robustness in Economic policies in India - Fundamentals.",
+      "rubric": null,
+      "userAnswer": 0,
+      "isCorrect": true,
+      "aiEvaluation": null
+    },
+    {
+      "id": "1ca38209-4926-4ed2-ae09-a1250c0a1aa9",
+      "createdAt": "2026-09-17T06:09:03.999Z",
+      "updatedAt": "2026-09-17T06:09:29.055Z",
+      "quizId": "824b6e77-1227-419d-9c0a-4a9f532f959f",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "conceptId": "b03cd1bf-dfa1-4b60-9da5-c9caebf2c4ad",
+      "conceptName": "Economic policies in India - Operational Mechanics",
+      "type": "open_ended",
+      "difficulty": "medium",
+      "prompt": "In the context of Economic policies in India - Operational Mechanics, which factor is most crucial for maintaining stability and optimal learning performance?",
+      "options": [
+        "Proper mathematical scaling and normalization to preserve stability in Economic policies in India - Operational Mechanics",
+        "Increasing parameter count arbitrarily without structural constraints",
+        "Removing all residual and feedback connections",
+        "Bypassing error checking and gradient verification"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling, normalization, and feedback mechanisms are essential for preserving computational stability and numerical robustness in Economic policies in India - Operational Mechanics.",
+      "rubric": null,
+      "userAnswer": "jjjjjjjjjjjjjjjjjjjjj",
+      "isCorrect": false,
+      "aiEvaluation": {
+        "score": 58,
+        "understanding": "Basic mention of the concept, but lacks depth and structural explanation.",
+        "accuracy": "Partially accurate, but missing key mechanical details.",
+        "keyConceptsCovered": [
+          "Economic policies in India - Operational Mechanics"
+        ],
+        "missingConcepts": [
+          "Detailed mechanics",
+          "Mathematical foundation"
+        ],
+        "reasoningScore": 62
+      }
+    },
+    {
+      "id": "1d6a1281-c75b-4401-be3e-c96767be4877",
+      "createdAt": "2026-09-17T06:09:04.004Z",
+      "updatedAt": "2026-09-17T06:09:35.720Z",
+      "quizId": "824b6e77-1227-419d-9c0a-4a9f532f959f",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "conceptId": "b34ac552-a3ce-4b86-abe4-93c2bdb3b8f4",
+      "conceptName": "Economic policies in India - Core Architecture & Tradeoffs",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "prompt": "In the context of Economic policies in India - Core Architecture & Tradeoffs, which factor is most crucial for maintaining stability and optimal learning performance?",
+      "options": [
+        "Proper mathematical scaling and normalization to preserve stability in Economic policies in India - Core Architecture & Tradeoffs",
+        "Increasing parameter count arbitrarily without structural constraints",
+        "Removing all residual and feedback connections",
+        "Bypassing error checking and gradient verification"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling, normalization, and feedback mechanisms are essential for preserving computational stability and numerical robustness in Economic policies in India - Core Architecture & Tradeoffs.",
+      "rubric": null,
+      "userAnswer": 0,
+      "isCorrect": true,
+      "aiEvaluation": null
+    },
+    {
+      "id": "2994407f-7283-4f53-ab6e-639a03ab1923",
+      "createdAt": "2026-09-18T10:47:00.788Z",
+      "updatedAt": "2026-09-18T10:47:07.040Z",
+      "quizId": "71515a73-8c80-408d-af0b-bf7c44de62cc",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "conceptId": "b5c3a61a-2850-4616-8b84-11771b4b816e",
+      "conceptName": "EPI Fundamentals",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "prompt": "In the context of EPI Fundamentals, which factor is most crucial for maintaining stability and optimal learning performance?",
+      "options": [
+        "Proper mathematical scaling and normalization to preserve stability in EPI Fundamentals",
+        "Increasing parameter count arbitrarily without structural constraints",
+        "Removing all residual and feedback connections",
+        "Bypassing error checking and gradient verification"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling, normalization, and feedback mechanisms are essential for preserving computational stability and numerical robustness in EPI Fundamentals.",
+      "rubric": null,
+      "userAnswer": 0,
+      "isCorrect": true,
+      "aiEvaluation": null
+    },
+    {
+      "id": "e9ccdfb7-44d6-427f-99c0-b539623ef104",
+      "createdAt": "2026-09-18T10:47:00.799Z",
+      "updatedAt": "2026-09-18T10:47:22.579Z",
+      "quizId": "71515a73-8c80-408d-af0b-bf7c44de62cc",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "conceptId": "dacd7f54-f3e8-4f1f-bb2e-a68f75805bc2",
+      "conceptName": "EPI Operational Mechanics",
+      "type": "open_ended",
+      "difficulty": "medium",
+      "prompt": "In the context of EPI Operational Mechanics, which factor is most crucial for maintaining stability and optimal learning performance?",
+      "options": [
+        "Proper mathematical scaling and normalization to preserve stability in EPI Operational Mechanics",
+        "Increasing parameter count arbitrarily without structural constraints",
+        "Removing all residual and feedback connections",
+        "Bypassing error checking and gradient verification"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling, normalization, and feedback mechanisms are essential for preserving computational stability and numerical robustness in EPI Operational Mechanics.",
+      "rubric": null,
+      "userAnswer": "jjkno",
+      "isCorrect": false,
+      "aiEvaluation": {
+        "score": 58,
+        "understanding": "Basic mention of the concept, but lacks depth and structural explanation.",
+        "accuracy": "Partially accurate, but missing key mechanical details.",
+        "keyConceptsCovered": [
+          "EPI Operational Mechanics"
+        ],
+        "missingConcepts": [
+          "Detailed mechanics",
+          "Mathematical foundation"
+        ],
+        "reasoningScore": 62
+      }
+    },
+    {
+      "id": "11d5b158-f4ca-456b-837a-d375ad9606bd",
+      "createdAt": "2026-09-18T10:47:00.808Z",
+      "updatedAt": "2026-09-18T10:47:27.953Z",
+      "quizId": "71515a73-8c80-408d-af0b-bf7c44de62cc",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "conceptId": "fbf2b7d8-03a8-4599-b358-687fe6d453fd",
+      "conceptName": "EPI System Tradeoffs",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "prompt": "In the context of EPI System Tradeoffs, which factor is most crucial for maintaining stability and optimal learning performance?",
+      "options": [
+        "Proper mathematical scaling and normalization to preserve stability in EPI System Tradeoffs",
+        "Increasing parameter count arbitrarily without structural constraints",
+        "Removing all residual and feedback connections",
+        "Bypassing error checking and gradient verification"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proper scaling, normalization, and feedback mechanisms are essential for preserving computational stability and numerical robustness in EPI System Tradeoffs.",
+      "rubric": null,
+      "userAnswer": 2,
+      "isCorrect": false,
+      "aiEvaluation": null
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "fc-1",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-1",
+      "front": "Why do we scale by sqrt(d_k) in Scaled Dot-Product Attention?",
+      "back": "To prevent the softmax function from entering saturation regions with near-zero gradients when d_k is large (by scaling variance from d_k back to 1).",
+      "interval": 3,
+      "repetitions": 2,
+      "easeFactor": 2.5,
+      "dueDate": "2026-09-18T04:17:08.137Z"
+    },
+    {
+      "id": "fc-2",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-3",
+      "front": "What mathematical operation enables RoPE to encode relative position?",
+      "back": "Applying 2D rotation matrices to consecutive pairs of dimensions in Query and Key vectors; dot product results in trigonometric identity depending on (m - n).",
+      "interval": 1,
+      "repetitions": 1,
+      "easeFactor": 2.2,
+      "dueDate": "2026-09-17T04:17:08.137Z"
+    },
+    {
+      "id": "fc-3",
+      "projectId": "proj-transformers",
+      "conceptId": "concept-4",
+      "front": "What is the main computational savings of using a KV Cache during inference?",
+      "back": "Avoids recomputing Key and Value projection matrices for previously generated tokens in decoder-only models, reducing per-token complexity from O(N^2) to O(N).",
+      "interval": 4,
+      "repetitions": 3,
+      "easeFactor": 2.6,
+      "dueDate": "2026-09-19T04:17:08.137Z"
+    },
+    {
+      "id": "4f5c0721-fd91-48ff-84b2-e7ad3eff0884",
+      "createdAt": "2026-09-17T06:07:02.151Z",
+      "updatedAt": "2026-09-17T06:07:02.151Z",
+      "projectId": "500aa7b0-b556-45ba-8459-7b37a1bcd598",
+      "userId": "user-1",
+      "conceptId": "2fde0941-382f-4503-a4ab-6b569249d8f2",
+      "front": "What is the primary role of Quantum Mechanics Fundamentals?",
+      "back": "Core theoretical definitions and fundamentals of Quantum Mechanics. Crucial for achieving the goal: \"Master wavefunctions\".",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0,
+      "nextReviewDate": "2026-09-17T06:07:02.151Z"
+    },
+    {
+      "id": "21ee9160-7720-49e5-975a-3b4021c95c55",
+      "createdAt": "2026-09-17T06:07:02.162Z",
+      "updatedAt": "2026-09-17T06:07:02.162Z",
+      "projectId": "500aa7b0-b556-45ba-8459-7b37a1bcd598",
+      "userId": "user-1",
+      "conceptId": "7148cdce-333e-41aa-aecc-919274e0416e",
+      "front": "What is the primary role of Quantum Mechanics Operational Mechanics?",
+      "back": "Standard functional mechanisms, calculations, and architecture. Crucial for achieving the goal: \"Master wavefunctions\".",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0,
+      "nextReviewDate": "2026-09-17T06:07:02.162Z"
+    },
+    {
+      "id": "2bc7bded-ca9d-4398-90ba-7064f6a84323",
+      "createdAt": "2026-09-17T06:07:02.171Z",
+      "updatedAt": "2026-09-17T06:07:02.171Z",
+      "projectId": "500aa7b0-b556-45ba-8459-7b37a1bcd598",
+      "userId": "user-1",
+      "conceptId": "d77821f5-1a18-4788-a6e9-453721e23115",
+      "front": "What is the primary role of Quantum Mechanics System Tradeoffs?",
+      "back": "Performance, computational constraints, and optimization strategies. Crucial for achieving the goal: \"Master wavefunctions\".",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0,
+      "nextReviewDate": "2026-09-17T06:07:02.171Z"
+    },
+    {
+      "id": "0eb8413c-6f1d-44f5-8790-d4f53a515e28",
+      "createdAt": "2026-09-18T10:45:55.049Z",
+      "updatedAt": "2026-09-18T10:45:55.049Z",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "conceptId": "b5c3a61a-2850-4616-8b84-11771b4b816e",
+      "front": "What is the primary role of EPI Fundamentals?",
+      "back": "Core theoretical definitions and fundamentals of EPI. Crucial for achieving the goal: \"want to prepare for mids and exams\".",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0,
+      "nextReviewDate": "2026-09-18T10:45:55.049Z"
+    },
+    {
+      "id": "4ee0cb7d-d458-4625-aaf3-2668e86bb8d9",
+      "createdAt": "2026-09-18T10:45:55.064Z",
+      "updatedAt": "2026-09-18T10:45:55.064Z",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "conceptId": "dacd7f54-f3e8-4f1f-bb2e-a68f75805bc2",
+      "front": "What is the primary role of EPI Operational Mechanics?",
+      "back": "Standard functional mechanisms, calculations, and architecture. Crucial for achieving the goal: \"want to prepare for mids and exams\".",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0,
+      "nextReviewDate": "2026-09-18T10:45:55.064Z"
+    },
+    {
+      "id": "3ac43353-b255-4765-86e7-c0f66c505754",
+      "createdAt": "2026-09-18T10:45:55.091Z",
+      "updatedAt": "2026-09-18T10:45:55.091Z",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "conceptId": "fbf2b7d8-03a8-4599-b358-687fe6d453fd",
+      "front": "What is the primary role of EPI System Tradeoffs?",
+      "back": "Performance, computational constraints, and optimization strategies. Crucial for achieving the goal: \"want to prepare for mids and exams\".",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0,
+      "nextReviewDate": "2026-09-18T10:45:55.091Z"
+    }
+  ],
+  "roadmaps": [
+    {
+      "id": "rm-1",
+      "projectId": "proj-transformers",
+      "title": "Mastery Learning Plan: Transformer Inference & Architecture",
+      "milestones": [
+        {
+          "id": "m-1",
+          "title": "Foundational Attention Math & Softmax Scaling",
+          "description": "Understand Scaled Dot-Product Attention equations and variance preservation.",
+          "status": "completed",
+          "targetConcept": "Scaled Dot-Product Attention"
+        },
+        {
+          "id": "m-2",
+          "title": "Relative Positional Encodings & RoPE Matrix Rotations",
+          "description": "Study Page 14 of the guide and resolve relative distance rotational geometry.",
+          "status": "in_progress",
+          "targetConcept": "Positional Encoding (RoPE)"
+        },
+        {
+          "id": "m-3",
+          "title": "GPU Memory Hierarchy & KV Cache Sizing",
+          "description": "Calculate HBM footprint for multi-head vs grouped-query attention models.",
+          "status": "pending",
+          "targetConcept": "KV Cache Optimization"
+        },
+        {
+          "id": "m-4",
+          "title": "FlashAttention Tiling Algorithm Implementation",
+          "description": "Analyze SRAM block sizes and online softmax updates.",
+          "status": "pending",
+          "targetConcept": "FlashAttention & SRAM Tiling"
+        }
+      ]
+    },
+    {
+      "id": "fb3945cd-fe33-48a8-938a-f4a8e2e0a986",
+      "createdAt": "2026-09-17T05:16:30.406Z",
+      "updatedAt": "2026-09-17T05:16:30.406Z",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "title": "Learning Journey: Economic policies in India",
+      "milestones": [
+        {
+          "id": "m-1",
+          "title": "Upload & Process Core Materials",
+          "description": "Provide textbooks, slides, or notes.",
+          "status": "in_progress"
+        },
+        {
+          "id": "m-2",
+          "title": "Foundational AI Tutoring Session",
+          "description": "Discuss core theoretical mechanics with the AI Tutor.",
+          "status": "pending"
+        },
+        {
+          "id": "m-3",
+          "title": "First Adaptive Assessment",
+          "description": "Test baseline understanding with dynamic questions.",
+          "status": "pending"
+        },
+        {
+          "id": "m-4",
+          "title": "Target Weak Concept Revision",
+          "description": "Strengthen concepts needing attention to reach target mastery.",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": "e5bbf3d6-f1ba-4d4f-bf72-9419d708f04c",
+      "createdAt": "2026-09-17T06:07:02.176Z",
+      "updatedAt": "2026-09-17T06:07:02.176Z",
+      "projectId": "500aa7b0-b556-45ba-8459-7b37a1bcd598",
+      "title": "Learning Journey: Quantum Mechanics",
+      "milestones": [
+        {
+          "id": "m-1",
+          "title": "Upload & Process Core Materials",
+          "description": "Provide textbooks, slides, or notes.",
+          "status": "in_progress"
+        },
+        {
+          "id": "m-2",
+          "title": "Foundational AI Tutoring Session",
+          "description": "Discuss core theoretical mechanics with the AI Tutor.",
+          "status": "pending"
+        },
+        {
+          "id": "m-3",
+          "title": "First Adaptive Assessment",
+          "description": "Test baseline understanding with dynamic questions.",
+          "status": "pending"
+        },
+        {
+          "id": "m-4",
+          "title": "Target Weak Concept Revision",
+          "description": "Strengthen concepts needing attention to reach target mastery.",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": "15b17448-3ddc-4ebf-b8b5-0ff53a15cee4",
+      "createdAt": "2026-09-18T10:45:55.098Z",
+      "updatedAt": "2026-09-18T10:45:55.098Z",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "title": "Learning Journey: EPI",
+      "milestones": [
+        {
+          "id": "m-1",
+          "title": "Upload & Process Core Materials",
+          "description": "Provide textbooks, slides, or notes.",
+          "status": "in_progress"
+        },
+        {
+          "id": "m-2",
+          "title": "Foundational AI Tutoring Session",
+          "description": "Discuss core theoretical mechanics with the AI Tutor.",
+          "status": "pending"
+        },
+        {
+          "id": "m-3",
+          "title": "First Adaptive Assessment",
+          "description": "Test baseline understanding with dynamic questions.",
+          "status": "pending"
+        },
+        {
+          "id": "m-4",
+          "title": "Target Weak Concept Revision",
+          "description": "Strengthen concepts needing attention to reach target mastery.",
+          "status": "pending"
+        }
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "rec-1",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "practice_weakness",
+      "title": "Review Rotary Positional Embeddings (RoPE)",
+      "description": "Your mastery score on Positional Encoding is 42% (Requiring Attention). Practice relative distance rotation questions and review Page 14 of your guide.",
+      "actionType": "start_quiz",
+      "actionPayload": {
+        "conceptId": "concept-3",
+        "targetDifficulty": "medium"
+      },
+      "priority": "high",
+      "isDismissed": false,
+      "createdAt": "2026-09-17T00:17:08.137Z"
+    },
+    {
+      "id": "rec-2",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "review_material",
+      "title": "Deepen FlashAttention Memory Bottleneck Mechanics",
+      "description": "Re-read Page 9 of \"KV Cache Memory & FlashAttention Engineering Notes.pdf\" regarding SRAM vs HBM memory bandwidth.",
+      "actionType": "open_material",
+      "actionPayload": {
+        "materialId": "doc-flash-attn",
+        "pageNumber": 9
+      },
+      "priority": "medium",
+      "isDismissed": false,
+      "createdAt": "2026-09-16T18:17:08.137Z"
+    },
+    {
+      "id": "a2269ed8-4e2d-4ff2-83e3-ba9354a53589",
+      "createdAt": "2026-09-17T04:44:17.540Z",
+      "updatedAt": "2026-09-17T04:44:17.540Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "explore_material",
+      "title": "Deepen Understanding with AI Tutor",
+      "description": "Ask the AI Tutor to synthesize the key equations and architectural tradeoffs from \"Transformer Architecture & Self-Attention Deep Dive.pdf\".",
+      "actionType": "open_tutor",
+      "actionPayload": {
+        "suggestedPrompt": "Can you explain the main theoretical tradeoffs highlighted in Transformer Architecture & Self-Attention Deep Dive.pdf?"
+      },
+      "priority": "medium",
+      "isDismissed": false
+    },
+    {
+      "id": "d386e40e-43c0-444f-9d99-451de0eea962",
+      "createdAt": "2026-09-17T06:07:40.597Z",
+      "updatedAt": "2026-09-17T06:07:40.597Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "type": "practice_weakness",
+      "title": "Targeted Practice: Raft Consensus & Replicated State Machines - Operational Mechanics",
+      "description": "Your mastery for \"Raft Consensus & Replicated State Machines - Operational Mechanics\" is at 50% (Requiring Attention). Review the primary study guide and take a 3-question adaptive quiz to strengthen retention.",
+      "actionType": "start_quiz",
+      "actionPayload": {
+        "conceptId": "56c94b76-5479-4a19-91b3-83fdbe045013",
+        "conceptName": "Raft Consensus & Replicated State Machines - Operational Mechanics"
+      },
+      "priority": "high",
+      "isDismissed": false
+    },
+    {
+      "id": "c9287841-fc6a-43d5-95d0-87c28ac2a995",
+      "createdAt": "2026-09-17T06:09:21.929Z",
+      "updatedAt": "2026-09-17T06:09:21.929Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "type": "practice_weakness",
+      "title": "Targeted Practice: Economic policies in India - Operational Mechanics",
+      "description": "Your mastery for \"Economic policies in India - Operational Mechanics\" is at 50% (Requiring Attention). Review the primary study guide and take a 3-question adaptive quiz to strengthen retention.",
+      "actionType": "start_quiz",
+      "actionPayload": {
+        "conceptId": "b03cd1bf-dfa1-4b60-9da5-c9caebf2c4ad",
+        "conceptName": "Economic policies in India - Operational Mechanics"
+      },
+      "priority": "high",
+      "isDismissed": false
+    },
+    {
+      "id": "778a860b-ebd3-4758-8573-bf1e5859f7fa",
+      "createdAt": "2026-09-18T10:45:58.451Z",
+      "updatedAt": "2026-09-18T10:45:58.451Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "type": "practice_weakness",
+      "title": "Targeted Practice: EPI Fundamentals",
+      "description": "Your mastery for \"EPI Fundamentals\" is at 50% (Requiring Attention). Review the primary study guide and take a 3-question adaptive quiz to strengthen retention.",
+      "actionType": "start_quiz",
+      "actionPayload": {
+        "conceptId": "b5c3a61a-2850-4616-8b84-11771b4b816e",
+        "conceptName": "EPI Fundamentals"
+      },
+      "priority": "high",
+      "isDismissed": false
+    },
+    {
+      "id": "d523613b-4bd4-4f5a-bbb2-5f63a8e9c2a4",
+      "createdAt": "2026-09-18T10:47:07.070Z",
+      "updatedAt": "2026-09-18T10:47:07.070Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "type": "practice_weakness",
+      "title": "Targeted Practice: EPI Operational Mechanics",
+      "description": "Your mastery for \"EPI Operational Mechanics\" is at 50% (Requiring Attention). Review the primary study guide and take a 3-question adaptive quiz to strengthen retention.",
+      "actionType": "start_quiz",
+      "actionPayload": {
+        "conceptId": "dacd7f54-f3e8-4f1f-bb2e-a68f75805bc2",
+        "conceptName": "EPI Operational Mechanics"
+      },
+      "priority": "high",
+      "isDismissed": false
+    }
+  ],
+  "events": [
+    {
+      "id": "evt-1",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "DOCUMENT_PROCESSED",
+      "title": "Document processed & indexed",
+      "details": "Transformer Architecture & Self-Attention Deep Dive.pdf (18 pages, 8 chunks extracted)",
+      "createdAt": "2026-09-09T04:17:08.137Z"
+    },
+    {
+      "id": "evt-2",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "TUTOR_INTERACTION",
+      "title": "AI Tutor Session completed",
+      "details": "Asked about Softmax Scaling Factor (Grounded response with Page 3 citation)",
+      "createdAt": "2026-09-15T04:17:08.137Z"
+    },
+    {
+      "id": "evt-3",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "QUIZ_COMPLETED",
+      "title": "Adaptive Assessment completed",
+      "details": "Scored 78% on Attention Mechanics assessment (Concept mastery updated)",
+      "createdAt": "2026-09-16T04:17:08.137Z"
+    },
+    {
+      "id": "evt-4",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "MASTERY_UPDATED",
+      "title": "Concept Mastery updated",
+      "details": "Scaled Dot-Product Attention increased to 88% (Status: Improving)",
+      "createdAt": "2026-09-16T04:17:08.137Z"
+    },
+    {
+      "id": "evt-5",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "RECOMMENDATION_GENERATED",
+      "title": "New learning recommendation",
+      "details": "Targeted practice recommended for Positional Encoding (RoPE)",
+      "createdAt": "2026-09-17T00:17:08.137Z"
+    },
+    {
+      "id": "b79d06c5-1b0b-47e5-a005-91a90e3b2c10",
+      "createdAt": "2026-09-17T04:17:08.168Z",
+      "updatedAt": "2026-09-17T04:17:08.168Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor provided grounded response with 3 citations"
+    },
+    {
+      "id": "c28327b5-9ff9-4c0f-9823-acccf4dcafc7",
+      "createdAt": "2026-09-17T04:17:08.173Z",
+      "updatedAt": "2026-09-17T04:17:08.173Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor provided grounded response with 3 citations"
+    },
+    {
+      "id": "c5429ac1-1411-4688-9a9e-3c4ce2567973",
+      "createdAt": "2026-09-17T04:17:08.196Z",
+      "updatedAt": "2026-09-17T04:17:08.196Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "MASTERY_UPDATED",
+      "title": "Mastery Update",
+      "details": "Positional Encoding (RoPE) adjusted to 54% (Requiring Attention)"
+    },
+    {
+      "id": "61bcacb2-1cc0-46ce-bb05-b46e33edd654",
+      "createdAt": "2026-09-17T04:17:33.372Z",
+      "updatedAt": "2026-09-17T04:17:33.372Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor provided grounded response with 2 citations"
+    },
+    {
+      "id": "26506ca0-010d-43ac-923e-533bb6782fc2",
+      "createdAt": "2026-09-17T04:17:33.379Z",
+      "updatedAt": "2026-09-17T04:17:33.379Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor detected unsupported question for query: \"What is the optimal thermodynamic compression rati...\""
+    },
+    {
+      "id": "3e9c3e0b-da9b-4e30-ad03-4ade8b5f3a18",
+      "createdAt": "2026-09-17T04:17:33.407Z",
+      "updatedAt": "2026-09-17T04:17:33.407Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "MASTERY_UPDATED",
+      "title": "Mastery Update",
+      "details": "FlashAttention & SRAM Tiling adjusted to 63% (Improving)"
+    },
+    {
+      "id": "00327586-84d2-4081-ac5f-1a229a68a59b",
+      "createdAt": "2026-09-17T04:42:32.708Z",
+      "updatedAt": "2026-09-17T04:42:32.708Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor provided grounded response with 2 citations"
+    },
+    {
+      "id": "867a7879-8f4c-4861-a44b-85025f85d352",
+      "createdAt": "2026-09-17T04:42:32.714Z",
+      "updatedAt": "2026-09-17T04:42:32.714Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor detected unsupported question for query: \"What is the optimal thermodynamic compression rati...\""
+    },
+    {
+      "id": "8a5ff090-37e4-4295-9b23-98e9bc86c222",
+      "createdAt": "2026-09-17T04:42:32.730Z",
+      "updatedAt": "2026-09-17T04:42:32.730Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "MASTERY_UPDATED",
+      "title": "Mastery Update",
+      "details": "Positional Encoding (RoPE) adjusted to 66% (Improving)"
+    },
+    {
+      "id": "003ea538-f3ba-4980-82f7-9908dc83f2e8",
+      "createdAt": "2026-09-17T04:44:17.542Z",
+      "updatedAt": "2026-09-17T04:44:17.542Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "RECOMMENDATION_GENERATED",
+      "title": "Next Step Recommendation",
+      "details": "Deepen Understanding with AI Tutor"
+    },
+    {
+      "id": "1e4c068f-04fa-4dbc-82c9-a003cd7e5268",
+      "createdAt": "2026-09-17T05:14:32.501Z",
+      "updatedAt": "2026-09-17T05:14:32.501Z",
+      "userId": "user-1",
+      "projectId": "proj-diffusion",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor detected unsupported question for query: \"Why is the dot product scaled by sqrt(d_k)?...\""
+    },
+    {
+      "id": "f5801aa7-12da-4a2d-8694-885bcf53c2bf",
+      "createdAt": "2026-09-17T05:14:42.450Z",
+      "updatedAt": "2026-09-17T05:14:42.450Z",
+      "userId": "user-1",
+      "projectId": "proj-diffusion",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor provided grounded response with 0 citations"
+    },
+    {
+      "id": "f8d67ab6-0af4-46a2-815f-950c7c5fc60b",
+      "createdAt": "2026-09-17T05:15:50.074Z",
+      "updatedAt": "2026-09-17T05:15:50.074Z",
+      "userId": "user-1",
+      "type": "SPACE_CREATED",
+      "title": "New Space Created",
+      "details": "Created Space: \"My academics\""
+    },
+    {
+      "id": "eb4dd0aa-a2f0-489b-8c20-57b6bfdfd7f8",
+      "createdAt": "2026-09-17T05:16:30.409Z",
+      "updatedAt": "2026-09-17T05:16:30.409Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "type": "PROJECT_CREATED",
+      "title": "New Project Created",
+      "details": "Created Project: \"Economic policies in India\" in Space \"My academics\""
+    },
+    {
+      "id": "27bb398a-d210-473c-a8c2-1fa851d7042d",
+      "createdAt": "2026-09-17T05:18:39.147Z",
+      "updatedAt": "2026-09-17T05:18:39.147Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor detected unsupported question for query: \"explain unemployment in India...\""
+    },
+    {
+      "id": "c61a39f7-f6b9-4a67-9997-2ae0dea4cf78",
+      "createdAt": "2026-09-17T05:18:56.673Z",
+      "updatedAt": "2026-09-17T05:18:56.674Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor provided grounded response with 0 citations"
+    },
+    {
+      "id": "0bf1e996-a7e8-4eaf-9ed3-a647e7b9f6ad",
+      "createdAt": "2026-09-17T05:58:37.689Z",
+      "updatedAt": "2026-09-17T05:58:37.689Z",
+      "userId": "admin-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor detected unsupported question for query: \"hii...\""
+    },
+    {
+      "id": "ae1c262a-6d16-4cb8-8016-649faebf2d92",
+      "createdAt": "2026-09-17T06:02:17.591Z",
+      "updatedAt": "2026-09-17T06:02:17.591Z",
+      "userId": "admin-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor provided grounded response with 0 citations"
+    },
+    {
+      "id": "a00dca9c-14ba-447f-9d38-8b0fb75dbac2",
+      "createdAt": "2026-09-17T06:02:29.763Z",
+      "updatedAt": "2026-09-17T06:02:29.763Z",
+      "userId": "admin-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor detected unsupported question for query: \"i  already uploaded right...\""
+    },
+    {
+      "id": "04b9e89a-f6ed-4927-8617-0db533d456fb",
+      "createdAt": "2026-09-17T06:03:51.370Z",
+      "updatedAt": "2026-09-17T06:03:51.370Z",
+      "userId": "admin-1",
+      "projectId": "proj-raft",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor detected unsupported question for query: \"What happens if we remove layer normalization from...\""
+    },
+    {
+      "id": "be06f70a-d176-432c-a302-493ad0316d20",
+      "createdAt": "2026-09-17T06:06:26.161Z",
+      "updatedAt": "2026-09-17T06:06:26.161Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor provided grounded response with 2 citations"
+    },
+    {
+      "id": "6fb79583-7a80-4d11-9f35-a803bcb865b1",
+      "createdAt": "2026-09-17T06:06:26.179Z",
+      "updatedAt": "2026-09-17T06:06:26.179Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor answered using General AI Knowledge: \"What is photosynthesis?...\""
+    },
+    {
+      "id": "df8c6908-7f70-4c97-86f1-630ccad7f797",
+      "createdAt": "2026-09-17T06:07:02.181Z",
+      "updatedAt": "2026-09-17T06:07:02.181Z",
+      "userId": "user-1",
+      "projectId": "500aa7b0-b556-45ba-8459-7b37a1bcd598",
+      "type": "PROJECT_CREATED",
+      "title": "New Project Created",
+      "details": "Created Project: \"Quantum Mechanics\" in Space \"Artificial Intelligence & Machine Learning\""
+    },
+    {
+      "id": "8615bf55-8772-4376-993f-e2516ccadee1",
+      "createdAt": "2026-09-17T06:07:40.583Z",
+      "updatedAt": "2026-09-17T06:07:40.583Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "type": "MASTERY_UPDATED",
+      "title": "Mastery Update",
+      "details": "Raft Consensus & Replicated State Machines - Fundamentals adjusted to 62% (Improving)"
+    },
+    {
+      "id": "4d1847e0-04c0-4949-ad8c-59542903874a",
+      "createdAt": "2026-09-17T06:07:40.600Z",
+      "updatedAt": "2026-09-17T06:07:40.600Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "type": "RECOMMENDATION_GENERATED",
+      "title": "Next Step Recommendation",
+      "details": "Targeted Practice: Raft Consensus & Replicated State Machines - Operational Mechanics"
+    },
+    {
+      "id": "eeb8d288-bfab-4047-bea0-266e937c669b",
+      "createdAt": "2026-09-17T06:07:52.088Z",
+      "updatedAt": "2026-09-17T06:07:52.088Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "type": "MASTERY_UPDATED",
+      "title": "Mastery Update",
+      "details": "Raft Consensus & Replicated State Machines - Operational Mechanics adjusted to 40% (Requiring Attention)"
+    },
+    {
+      "id": "c626961e-064e-4647-a4af-592f86d97a53",
+      "createdAt": "2026-09-17T06:08:07.564Z",
+      "updatedAt": "2026-09-17T06:08:07.564Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "type": "MASTERY_UPDATED",
+      "title": "Mastery Update",
+      "details": "Raft Consensus & Replicated State Machines - Core Architecture & Tradeoffs adjusted to 42% (Requiring Attention)"
+    },
+    {
+      "id": "562f832b-a162-4273-94d0-84eadcaf570d",
+      "createdAt": "2026-09-17T06:08:10.260Z",
+      "updatedAt": "2026-09-17T06:08:10.260Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "type": "QUIZ_COMPLETED",
+      "title": "Quiz Completed",
+      "details": "Completed \"Adaptive Assessment: Raft Consensus & Replicated State Machines - Fundamentals & Raft Consensus & Replicated State Machines - Operational Mechanics\" with a score of 53%"
+    },
+    {
+      "id": "496f2c62-1a83-4e9b-a7b1-106931706c2d",
+      "createdAt": "2026-09-17T06:08:18.146Z",
+      "updatedAt": "2026-09-17T06:08:18.146Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "type": "MASTERY_UPDATED",
+      "title": "Mastery Update",
+      "details": "Raft Consensus & Replicated State Machines - Operational Mechanics adjusted to 32% (Requiring Attention)"
+    },
+    {
+      "id": "59c497c8-33a2-429b-9af7-5905548640d2",
+      "createdAt": "2026-09-17T06:08:35.850Z",
+      "updatedAt": "2026-09-17T06:08:35.850Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "type": "MASTERY_UPDATED",
+      "title": "Mastery Update",
+      "details": "Raft Consensus & Replicated State Machines - Core Architecture & Tradeoffs adjusted to 32% (Requiring Attention)"
+    },
+    {
+      "id": "9be795ba-5591-4b29-9208-007f84ee17f1",
+      "createdAt": "2026-09-17T06:08:45.949Z",
+      "updatedAt": "2026-09-17T06:08:45.949Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "type": "MASTERY_UPDATED",
+      "title": "Mastery Update",
+      "details": "Raft Consensus & Replicated State Machines - Fundamentals adjusted to 54% (Requiring Attention)"
+    },
+    {
+      "id": "9c8781e2-3b9d-4106-8c73-f4fad7e73873",
+      "createdAt": "2026-09-17T06:09:21.917Z",
+      "updatedAt": "2026-09-17T06:09:21.917Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "type": "MASTERY_UPDATED",
+      "title": "Mastery Update",
+      "details": "Economic policies in India - Fundamentals adjusted to 62% (Improving)"
+    },
+    {
+      "id": "1d245e00-c5dc-4fd0-915e-f82002e9bfcf",
+      "createdAt": "2026-09-17T06:09:21.932Z",
+      "updatedAt": "2026-09-17T06:09:21.932Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "type": "RECOMMENDATION_GENERATED",
+      "title": "Next Step Recommendation",
+      "details": "Targeted Practice: Economic policies in India - Operational Mechanics"
+    },
+    {
+      "id": "e4501213-08b6-43f9-b789-f700c7f684c4",
+      "createdAt": "2026-09-17T06:09:29.064Z",
+      "updatedAt": "2026-09-17T06:09:29.064Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "type": "MASTERY_UPDATED",
+      "title": "Mastery Update",
+      "details": "Economic policies in India - Operational Mechanics adjusted to 40% (Requiring Attention)"
+    },
+    {
+      "id": "68b7b839-9a53-4116-bd0d-05f7538a5b30",
+      "createdAt": "2026-09-17T06:09:35.727Z",
+      "updatedAt": "2026-09-17T06:09:35.727Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "type": "MASTERY_UPDATED",
+      "title": "Mastery Update",
+      "details": "Economic policies in India - Core Architecture & Tradeoffs adjusted to 62% (Improving)"
+    },
+    {
+      "id": "26d0fc31-4d33-4190-86ef-ca6b9c26d28e",
+      "createdAt": "2026-09-17T06:09:38.188Z",
+      "updatedAt": "2026-09-17T06:09:38.188Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "type": "QUIZ_COMPLETED",
+      "title": "Quiz Completed",
+      "details": "Completed \"Adaptive Assessment: Economic policies in India - Fundamentals & Economic policies in India - Operational Mechanics\" with a score of 86%"
+    },
+    {
+      "id": "56bef052-1285-40a1-8a79-cc470521160b",
+      "createdAt": "2026-09-17T06:10:10.273Z",
+      "updatedAt": "2026-09-17T06:10:10.273Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor refused unsupported question: \"explain unemployment in India...\""
+    },
+    {
+      "id": "317a1114-1e77-4f86-982f-d089d0e2014a",
+      "createdAt": "2026-09-17T06:10:14.280Z",
+      "updatedAt": "2026-09-17T06:10:14.280Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor answered using General AI Knowledge: \"explain unemployment in India...\""
+    },
+    {
+      "id": "08a55702-8177-4cce-b9f3-2e486255f006",
+      "createdAt": "2026-09-18T10:45:22.137Z",
+      "updatedAt": "2026-09-18T10:45:22.137Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "type": "SPACE_CREATED",
+      "title": "New Space Created",
+      "details": "Created Space: \"My academics\""
+    },
+    {
+      "id": "69d44871-75a2-4c39-8eb6-1293c540d21f",
+      "createdAt": "2026-09-18T10:45:55.104Z",
+      "updatedAt": "2026-09-18T10:45:55.104Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "type": "PROJECT_CREATED",
+      "title": "New Project Created",
+      "details": "Created Project: \"EPI\" in Space \"My academics\""
+    },
+    {
+      "id": "44ef6d3b-bef8-4d95-a5f8-117aa449d136",
+      "createdAt": "2026-09-18T10:45:58.456Z",
+      "updatedAt": "2026-09-18T10:45:58.456Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "type": "RECOMMENDATION_GENERATED",
+      "title": "Next Step Recommendation",
+      "details": "Targeted Practice: EPI Fundamentals"
+    },
+    {
+      "id": "32e32175-36c8-4645-a644-6d88c8cd9169",
+      "createdAt": "2026-09-18T10:47:07.054Z",
+      "updatedAt": "2026-09-18T10:47:07.054Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "type": "MASTERY_UPDATED",
+      "title": "Mastery Update",
+      "details": "EPI Fundamentals adjusted to 62% (Improving)"
+    },
+    {
+      "id": "f22e6850-a595-40af-895a-ebf0a3132ad1",
+      "createdAt": "2026-09-18T10:47:07.076Z",
+      "updatedAt": "2026-09-18T10:47:07.076Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "type": "RECOMMENDATION_GENERATED",
+      "title": "Next Step Recommendation",
+      "details": "Targeted Practice: EPI Operational Mechanics"
+    },
+    {
+      "id": "4fcce93c-36c4-4f54-9d38-3e21e07e2fc1",
+      "createdAt": "2026-09-18T10:47:22.590Z",
+      "updatedAt": "2026-09-18T10:47:22.590Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "type": "MASTERY_UPDATED",
+      "title": "Mastery Update",
+      "details": "EPI Operational Mechanics adjusted to 40% (Requiring Attention)"
+    },
+    {
+      "id": "7a40c8a0-39cb-46c3-8040-1f0fcadfc085",
+      "createdAt": "2026-09-18T10:47:27.985Z",
+      "updatedAt": "2026-09-18T10:47:27.985Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "type": "MASTERY_UPDATED",
+      "title": "Mastery Update",
+      "details": "EPI System Tradeoffs adjusted to 42% (Requiring Attention)"
+    },
+    {
+      "id": "c9ec0d50-edfd-4386-976b-dc226dd271d3",
+      "createdAt": "2026-09-18T10:47:44.457Z",
+      "updatedAt": "2026-09-18T10:47:44.457Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "type": "QUIZ_COMPLETED",
+      "title": "Quiz Completed",
+      "details": "Completed \"Adaptive Assessment: EPI Fundamentals & EPI Operational Mechanics\" with a score of 53%"
+    },
+    {
+      "id": "b9106779-ee50-4cb8-ac4b-b15c34a60e03",
+      "createdAt": "2026-09-18T10:48:35.573Z",
+      "updatedAt": "2026-09-18T10:48:35.573Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor refused unsupported question: \"hii...\""
+    },
+    {
+      "id": "dbdb93dd-3410-41c7-b32b-a457712d2ece",
+      "createdAt": "2026-09-18T10:48:40.496Z",
+      "updatedAt": "2026-09-18T10:48:40.496Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "type": "TUTOR_INTERACTION",
+      "title": "Tutor Query",
+      "details": "Tutor refused unsupported question: \"how r u...\""
+    }
+  ],
+  "ai_logs": [
+    {
+      "id": "log-1",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "tutor_chat",
+      "model": "gemini-1.5-flash",
+      "promptTokens": 310,
+      "completionTokens": 185,
+      "totalTokens": 495,
+      "estimatedCost": 0.000078,
+      "latencyMs": 420,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Why is the dot product of Query and Key scaled by sqrt(d_k)...",
+      "createdAt": "2026-09-15T04:17:08.137Z"
+    },
+    {
+      "id": "log-2",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "assessment_grading",
+      "model": "gemini-1.5-flash",
+      "promptTokens": 420,
+      "completionTokens": 140,
+      "totalTokens": 560,
+      "estimatedCost": 0.000073,
+      "latencyMs": 510,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "promptPreview": "Grading open-ended answer for RoPE rotation...",
+      "createdAt": "2026-09-16T04:17:08.137Z"
+    },
+    {
+      "id": "log-3",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "adaptive_question_gen",
+      "model": "gemini-1.5-flash",
+      "promptTokens": 540,
+      "completionTokens": 210,
+      "totalTokens": 750,
+      "estimatedCost": 0.000103,
+      "latencyMs": 590,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "promptPreview": "Generating adaptive question for weak concept Positional Encoding...",
+      "createdAt": "2026-09-16T04:17:08.137Z"
+    },
+    {
+      "id": "log-4",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "tutor_unsupported_refusal",
+      "model": "gemini-1.5-flash",
+      "promptTokens": 290,
+      "completionTokens": 90,
+      "totalTokens": 380,
+      "estimatedCost": 0.000048,
+      "latencyMs": 310,
+      "status": "SUCCESS",
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "promptPreview": "User asked about Quantum Chromodynamics in Transformers project...",
+      "createdAt": "2026-09-16T10:17:08.137Z"
+    },
+    {
+      "id": "d9aace97-13cf-471b-9a94-5b5619bb404f",
+      "createdAt": "2026-09-17T04:17:08.165Z",
+      "updatedAt": "2026-09-17T04:17:08.165Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "tutor_chat",
+      "model": "built-in-local-engine",
+      "promptTokens": 629,
+      "completionTokens": 192,
+      "totalTokens": 821,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "User Question: Why is the dot product scaled by sqrt(d_k)?\n\nRelevant Project Materials:\n[Document 1: Transformer Architecture & Self-Attenti..."
+    },
+    {
+      "id": "a0bdafec-ac49-42ef-875b-23d698455bb8",
+      "createdAt": "2026-09-17T04:17:08.170Z",
+      "updatedAt": "2026-09-17T04:17:08.170Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "tutor_chat",
+      "model": "built-in-local-engine",
+      "promptTokens": 643,
+      "completionTokens": 192,
+      "totalTokens": 835,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "User Question: What is the optimal thermodynamic compression ratio in a 4-stroke internal combustion engine?\n\nRelevant Project Materials:\n[D..."
+    },
+    {
+      "id": "d0dc4ec7-b924-4e14-a54c-5efd47756035",
+      "createdAt": "2026-09-17T04:17:08.183Z",
+      "updatedAt": "2026-09-17T04:17:08.183Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 193,
+      "completionTokens": 169,
+      "totalTokens": 362,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive easy multiple_choice assessment question for the concept \"Positional Encoding (RoPE)\".\nContext from project notes: Rota..."
+    },
+    {
+      "id": "840ce7a6-e672-4021-9003-0f662a0b4169",
+      "createdAt": "2026-09-17T04:17:08.186Z",
+      "updatedAt": "2026-09-17T04:17:08.186Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 146,
+      "completionTokens": 172,
+      "totalTokens": 318,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium open_ended assessment question for the concept \"FlashAttention & SRAM Tiling\".\nContext from project notes: IO-aw..."
+    },
+    {
+      "id": "c8655172-0892-4668-a801-a7c3cbf069e0",
+      "createdAt": "2026-09-17T04:17:08.198Z",
+      "updatedAt": "2026-09-17T04:17:08.198Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "assessment_grading",
+      "model": "built-in-local-engine",
+      "promptTokens": 232,
+      "completionTokens": 110,
+      "totalTokens": 342,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Evaluate the student's answer to this open-ended learning question.\nQuestion: \"Explain how Positional Encoding with RoPE preserves relative ..."
+    },
+    {
+      "id": "74a0aa2d-b253-443e-8274-bdefa5329273",
+      "createdAt": "2026-09-17T04:17:33.368Z",
+      "updatedAt": "2026-09-17T04:17:33.368Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "tutor_chat",
+      "model": "built-in-local-engine",
+      "promptTokens": 517,
+      "completionTokens": 192,
+      "totalTokens": 709,
+      "estimatedCost": 0,
+      "latencyMs": 1,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "User Question: Why is the dot product scaled by sqrt(d_k)?\n\nRelevant Project Materials:\n[Document 1: Transformer Architecture & Self-Attenti..."
+    },
+    {
+      "id": "474dbe51-5572-426f-8062-5e46a54ec7b4",
+      "createdAt": "2026-09-17T04:17:33.374Z",
+      "updatedAt": "2026-09-17T04:17:33.374Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "tutor_unsupported_refusal",
+      "model": "built-in-local-engine",
+      "promptTokens": 303,
+      "completionTokens": 118,
+      "totalTokens": 421,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "promptPreview": "User question: \"What is the optimal thermodynamic compression ratio in a 4-stroke internal combustion engine?\"\n\nNotice: Insufficient evidenc..."
+    },
+    {
+      "id": "3ae36ce7-01a4-4080-83c4-2c39cea8a47f",
+      "createdAt": "2026-09-17T04:17:33.385Z",
+      "updatedAt": "2026-09-17T04:17:33.385Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 142,
+      "completionTokens": 172,
+      "totalTokens": 314,
+      "estimatedCost": 0,
+      "latencyMs": 1,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium multiple_choice assessment question for the concept \"FlashAttention & SRAM Tiling\".\nContext from project notes: ..."
+    },
+    {
+      "id": "97f699a4-9194-440f-a864-46a5f9a3b3a3",
+      "createdAt": "2026-09-17T04:17:33.398Z",
+      "updatedAt": "2026-09-17T04:17:33.398Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 197,
+      "completionTokens": 170,
+      "totalTokens": 367,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium open_ended assessment question for the concept \"Positional Encoding (RoPE)\".\nContext from project notes: Rotary ..."
+    },
+    {
+      "id": "da89403b-c541-4bb9-8878-a172b07f49c3",
+      "createdAt": "2026-09-17T04:17:33.411Z",
+      "updatedAt": "2026-09-17T04:17:33.411Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "assessment_grading",
+      "model": "built-in-local-engine",
+      "promptTokens": 232,
+      "completionTokens": 110,
+      "totalTokens": 342,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Evaluate the student's answer to this open-ended learning question.\nQuestion: \"Explain how Positional Encoding with RoPE preserves relative ..."
+    },
+    {
+      "id": "17a07319-fae7-45c6-a10e-ee1404c97ffe",
+      "createdAt": "2026-09-17T04:42:32.706Z",
+      "updatedAt": "2026-09-17T04:42:32.706Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "tutor_chat",
+      "model": "built-in-local-engine",
+      "promptTokens": 509,
+      "completionTokens": 192,
+      "totalTokens": 701,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "User Question: Why is the dot product scaled by sqrt(d_k)?\n\nRelevant Project Materials:\n[Document 1: Transformer Architecture & Self-Attenti..."
+    },
+    {
+      "id": "f35a5178-b45d-49d5-9424-5170dad25709",
+      "createdAt": "2026-09-17T04:42:32.711Z",
+      "updatedAt": "2026-09-17T04:42:32.711Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "tutor_unsupported_refusal",
+      "model": "built-in-local-engine",
+      "promptTokens": 295,
+      "completionTokens": 118,
+      "totalTokens": 413,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "promptPreview": "User question: \"What is the optimal thermodynamic compression ratio in a 4-stroke internal combustion engine?\"\n\nNotice: Insufficient evidenc..."
+    },
+    {
+      "id": "75ea9a91-9d9c-4546-9a27-3689cd9d0070",
+      "createdAt": "2026-09-17T04:42:32.720Z",
+      "updatedAt": "2026-09-17T04:42:32.720Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 193,
+      "completionTokens": 170,
+      "totalTokens": 363,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium multiple_choice assessment question for the concept \"Positional Encoding (RoPE)\".\nContext from project notes: Ro..."
+    },
+    {
+      "id": "859c70fc-fd1a-4bd8-a401-e3916604ffd9",
+      "createdAt": "2026-09-17T04:42:32.723Z",
+      "updatedAt": "2026-09-17T04:42:32.723Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 146,
+      "completionTokens": 172,
+      "totalTokens": 318,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium open_ended assessment question for the concept \"FlashAttention & SRAM Tiling\".\nContext from project notes: IO-aw..."
+    },
+    {
+      "id": "7f224891-d6d8-4099-9ce1-2046ad2d54f0",
+      "createdAt": "2026-09-17T04:42:32.733Z",
+      "updatedAt": "2026-09-17T04:42:32.733Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "assessment_grading",
+      "model": "built-in-local-engine",
+      "promptTokens": 232,
+      "completionTokens": 110,
+      "totalTokens": 342,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Evaluate the student's answer to this open-ended learning question.\nQuestion: \"Explain how Positional Encoding with RoPE preserves relative ..."
+    },
+    {
+      "id": "20c81107-0602-490f-9654-acb4ee3d53a4",
+      "createdAt": "2026-09-17T04:59:20.229Z",
+      "updatedAt": "2026-09-17T04:59:20.229Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 142,
+      "completionTokens": 172,
+      "totalTokens": 314,
+      "estimatedCost": 0,
+      "latencyMs": 1,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium multiple_choice assessment question for the concept \"FlashAttention & SRAM Tiling\".\nContext from project notes: ..."
+    },
+    {
+      "id": "f8852a9e-ef2c-4e59-a5a7-de26d331db9c",
+      "createdAt": "2026-09-17T04:59:20.233Z",
+      "updatedAt": "2026-09-17T04:59:20.233Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 209,
+      "completionTokens": 164,
+      "totalTokens": 373,
+      "estimatedCost": 0,
+      "latencyMs": 1,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium open_ended assessment question for the concept \"KV Cache Optimization\".\nContext from project notes: During infer..."
+    },
+    {
+      "id": "fbfcb683-662e-4120-bf0a-dfe51f171d1d",
+      "createdAt": "2026-09-17T04:59:20.239Z",
+      "updatedAt": "2026-09-17T04:59:20.239Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 193,
+      "completionTokens": 170,
+      "totalTokens": 363,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium multiple_choice assessment question for the concept \"Positional Encoding (RoPE)\".\nContext from project notes: Ro..."
+    },
+    {
+      "id": "efd909fb-fc1c-4af7-a5c0-5fb74c678914",
+      "createdAt": "2026-09-17T05:14:32.494Z",
+      "updatedAt": "2026-09-17T05:14:32.494Z",
+      "userId": "user-1",
+      "projectId": "proj-diffusion",
+      "feature": "tutor_unsupported_refusal",
+      "model": "built-in-local-engine",
+      "promptTokens": 266,
+      "completionTokens": 118,
+      "totalTokens": 384,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "promptPreview": "User question: \"Why is the dot product scaled by sqrt(d_k)?\"\n\nNotice: Insufficient evidence in project materials. Formulate a polite refusal..."
+    },
+    {
+      "id": "cbec0cb3-4a37-46b6-bed0-eff29b2b4cee",
+      "createdAt": "2026-09-17T05:14:42.444Z",
+      "updatedAt": "2026-09-17T05:14:42.444Z",
+      "userId": "user-1",
+      "projectId": "proj-diffusion",
+      "feature": "tutor_chat",
+      "model": "built-in-local-engine",
+      "promptTokens": 186,
+      "completionTokens": 58,
+      "totalTokens": 244,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Why is the dot product scaled by sqrt(d_k)?"
+    },
+    {
+      "id": "551e2c1a-cb12-450e-b917-4aec0c53041e",
+      "createdAt": "2026-09-17T05:18:39.133Z",
+      "updatedAt": "2026-09-17T05:18:39.133Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "feature": "tutor_unsupported_refusal",
+      "model": "built-in-local-engine",
+      "promptTokens": 244,
+      "completionTokens": 118,
+      "totalTokens": 362,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "promptPreview": "User question: \"explain unemployment in India\"\n\nNotice: Insufficient evidence in project materials. Formulate a polite refusal explaining th..."
+    },
+    {
+      "id": "faa8b3b4-dc67-4874-b14e-7d61a1623e3c",
+      "createdAt": "2026-09-17T05:18:56.664Z",
+      "updatedAt": "2026-09-17T05:18:56.664Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "feature": "tutor_chat",
+      "model": "built-in-local-engine",
+      "promptTokens": 167,
+      "completionTokens": 58,
+      "totalTokens": 225,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "explain unemployment in India"
+    },
+    {
+      "id": "2f953b01-4eda-440d-954c-28b926a5894c",
+      "createdAt": "2026-09-17T05:58:37.682Z",
+      "updatedAt": "2026-09-17T05:58:37.682Z",
+      "userId": "admin-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "feature": "tutor_unsupported_refusal",
+      "model": "built-in-local-engine",
+      "promptTokens": 237,
+      "completionTokens": 118,
+      "totalTokens": 355,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "promptPreview": "User question: \"hii\"\n\nNotice: Insufficient evidence in project materials. Formulate a polite refusal explaining that the uploaded documents ..."
+    },
+    {
+      "id": "5f934597-d87e-4833-8ddb-f5c6e445d5ab",
+      "createdAt": "2026-09-17T06:02:17.587Z",
+      "updatedAt": "2026-09-17T06:02:17.587Z",
+      "userId": "admin-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "feature": "tutor_chat",
+      "model": "built-in-local-engine",
+      "promptTokens": 160,
+      "completionTokens": 58,
+      "totalTokens": 218,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "hii"
+    },
+    {
+      "id": "2cf06c4b-2984-4302-8cc3-5799572d9d85",
+      "createdAt": "2026-09-17T06:02:29.746Z",
+      "updatedAt": "2026-09-17T06:02:29.746Z",
+      "userId": "admin-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "feature": "tutor_unsupported_refusal",
+      "model": "built-in-local-engine",
+      "promptTokens": 243,
+      "completionTokens": 118,
+      "totalTokens": 361,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "promptPreview": "User question: \"i  already uploaded right\"\n\nNotice: Insufficient evidence in project materials. Formulate a polite refusal explaining that t..."
+    },
+    {
+      "id": "2f18326e-7daf-4f4a-9408-baaad8ec6f72",
+      "createdAt": "2026-09-17T06:03:51.366Z",
+      "updatedAt": "2026-09-17T06:03:51.366Z",
+      "userId": "admin-1",
+      "projectId": "proj-raft",
+      "feature": "tutor_unsupported_refusal",
+      "model": "built-in-local-engine",
+      "promptTokens": 270,
+      "completionTokens": 118,
+      "totalTokens": 388,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "promptPreview": "User question: \"What happens if we remove layer normalization from attention?\"\n\nNotice: Insufficient evidence in project materials. Formulat..."
+    },
+    {
+      "id": "55d0005e-d7c9-4a1e-88a9-f589057811a4",
+      "createdAt": "2026-09-17T06:06:26.116Z",
+      "updatedAt": "2026-09-17T06:06:26.116Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 142,
+      "completionTokens": 192,
+      "totalTokens": 334,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium multiple_choice assessment question for the concept \"FlashAttention & SRAM Tiling\".\nContext from project notes: ..."
+    },
+    {
+      "id": "f052062a-4edc-4832-8549-d69f97e02c66",
+      "createdAt": "2026-09-17T06:06:26.120Z",
+      "updatedAt": "2026-09-17T06:06:26.120Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 209,
+      "completionTokens": 185,
+      "totalTokens": 394,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium open_ended assessment question for the concept \"KV Cache Optimization\".\nContext from project notes: During infer..."
+    },
+    {
+      "id": "dab32778-2efc-4421-a056-5e204d0b3d1b",
+      "createdAt": "2026-09-17T06:06:26.155Z",
+      "updatedAt": "2026-09-17T06:06:26.155Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "tutor_chat",
+      "model": "built-in-local-engine",
+      "promptTokens": 642,
+      "completionTokens": 329,
+      "totalTokens": 971,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Student Question: Why scale by sqrt(d_k)?\n\nRecent Conversation:\nStudent: Why is the dot product of Query and Key scaled by sqrt(d_k) in the ..."
+    },
+    {
+      "id": "6b4217fa-48ce-43d1-836f-b920f450cccf",
+      "createdAt": "2026-09-17T06:06:26.174Z",
+      "updatedAt": "2026-09-17T06:06:26.174Z",
+      "userId": "user-1",
+      "projectId": "proj-transformers",
+      "feature": "tutor_general_knowledge",
+      "model": "built-in-local-engine",
+      "promptTokens": 459,
+      "completionTokens": 252,
+      "totalTokens": 711,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Student Question: What is photosynthesis?\n\nRecent Conversation:\nStudent: Why is the dot product of Query and Key scaled by sqrt(d_k) in the ..."
+    },
+    {
+      "id": "27199380-77f8-4e43-8b7c-f597a10119cb",
+      "createdAt": "2026-09-17T06:07:02.199Z",
+      "updatedAt": "2026-09-17T06:07:02.199Z",
+      "userId": "user-1",
+      "projectId": "500aa7b0-b556-45ba-8459-7b37a1bcd598",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 134,
+      "completionTokens": 194,
+      "totalTokens": 328,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium multiple_choice assessment question for the concept \"Quantum Mechanics Fundamentals\".\nContext from project notes..."
+    },
+    {
+      "id": "c2944411-408a-43f9-938d-409b9d1356a5",
+      "createdAt": "2026-09-17T06:07:02.208Z",
+      "updatedAt": "2026-09-17T06:07:02.208Z",
+      "userId": "user-1",
+      "projectId": "500aa7b0-b556-45ba-8459-7b37a1bcd598",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 139,
+      "completionTokens": 204,
+      "totalTokens": 343,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium open_ended assessment question for the concept \"Quantum Mechanics Operational Mechanics\".\nContext from project n..."
+    },
+    {
+      "id": "6b5d3a09-a146-46c3-9487-1590ae57263d",
+      "createdAt": "2026-09-17T06:07:34.061Z",
+      "updatedAt": "2026-09-17T06:07:34.061Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 157,
+      "completionTokens": 223,
+      "totalTokens": 380,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium multiple_choice assessment question for the concept \"Raft Consensus & Replicated State Machines - Fundamentals\"...."
+    },
+    {
+      "id": "0395e04c-20a5-4efb-84b3-54194d8a8070",
+      "createdAt": "2026-09-17T06:07:34.065Z",
+      "updatedAt": "2026-09-17T06:07:34.065Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 164,
+      "completionTokens": 232,
+      "totalTokens": 396,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium open_ended assessment question for the concept \"Raft Consensus & Replicated State Machines - Operational Mechani..."
+    },
+    {
+      "id": "e54caa44-6f72-495c-a57d-4e42092366b7",
+      "createdAt": "2026-09-17T06:07:34.070Z",
+      "updatedAt": "2026-09-17T06:07:34.070Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 162,
+      "completionTokens": 241,
+      "totalTokens": 403,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium multiple_choice assessment question for the concept \"Raft Consensus & Replicated State Machines - Core Architect..."
+    },
+    {
+      "id": "1027a7b0-a222-4498-ac8d-0ff85a8ff69b",
+      "createdAt": "2026-09-17T06:07:52.076Z",
+      "updatedAt": "2026-09-17T06:07:52.076Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "feature": "assessment_grading",
+      "model": "built-in-local-engine",
+      "promptTokens": 262,
+      "completionTokens": 93,
+      "totalTokens": 355,
+      "estimatedCost": 0,
+      "latencyMs": 1,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Evaluate the student's answer to this open-ended learning question using the reference materials.\nQuestion: \"In the context of Raft Consensu..."
+    },
+    {
+      "id": "0f911c2f-b426-40d3-829f-909b961890be",
+      "createdAt": "2026-09-17T06:08:12.711Z",
+      "updatedAt": "2026-09-17T06:08:12.711Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 159,
+      "completionTokens": 232,
+      "totalTokens": 391,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive easy multiple_choice assessment question for the concept \"Raft Consensus & Replicated State Machines - Operational Mech..."
+    },
+    {
+      "id": "4958a0fe-4cd5-4a88-8c94-c304854ef35f",
+      "createdAt": "2026-09-17T06:08:12.718Z",
+      "updatedAt": "2026-09-17T06:08:12.718Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 165,
+      "completionTokens": 240,
+      "totalTokens": 405,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive easy open_ended assessment question for the concept \"Raft Consensus & Replicated State Machines - Core Architecture & T..."
+    },
+    {
+      "id": "e527479f-2636-4f8b-88bf-6778364bfc1d",
+      "createdAt": "2026-09-17T06:08:12.725Z",
+      "updatedAt": "2026-09-17T06:08:12.725Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 157,
+      "completionTokens": 223,
+      "totalTokens": 380,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium multiple_choice assessment question for the concept \"Raft Consensus & Replicated State Machines - Fundamentals\"...."
+    },
+    {
+      "id": "fffbe2d7-d8cd-476d-9f17-5cc0845dfa18",
+      "createdAt": "2026-09-17T06:08:35.839Z",
+      "updatedAt": "2026-09-17T06:08:35.839Z",
+      "userId": "user-1",
+      "projectId": "proj-raft",
+      "feature": "assessment_grading",
+      "model": "built-in-local-engine",
+      "promptTokens": 273,
+      "completionTokens": 95,
+      "totalTokens": 368,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Evaluate the student's answer to this open-ended learning question using the reference materials.\nQuestion: \"In the context of Raft Consensu..."
+    },
+    {
+      "id": "1a6bc9a5-540d-4397-9360-f33f08628bd6",
+      "createdAt": "2026-09-17T06:09:03.992Z",
+      "updatedAt": "2026-09-17T06:09:03.992Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 144,
+      "completionTokens": 206,
+      "totalTokens": 350,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium multiple_choice assessment question for the concept \"Economic policies in India - Fundamentals\".\nContext from pr..."
+    },
+    {
+      "id": "9303b7f3-2415-47f7-a173-3810aae02d32",
+      "createdAt": "2026-09-17T06:09:03.996Z",
+      "updatedAt": "2026-09-17T06:09:03.996Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 150,
+      "completionTokens": 215,
+      "totalTokens": 365,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium open_ended assessment question for the concept \"Economic policies in India - Operational Mechanics\".\nContext fro..."
+    },
+    {
+      "id": "0192ddcb-aba3-4498-b1f4-adab4410afa9",
+      "createdAt": "2026-09-17T06:09:04.002Z",
+      "updatedAt": "2026-09-17T06:09:04.002Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 149,
+      "completionTokens": 224,
+      "totalTokens": 373,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium multiple_choice assessment question for the concept \"Economic policies in India - Core Architecture & Tradeoffs\"..."
+    },
+    {
+      "id": "e3795ab4-d2d0-4436-b731-05ffe64991bd",
+      "createdAt": "2026-09-17T06:09:29.053Z",
+      "updatedAt": "2026-09-17T06:09:29.053Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "feature": "assessment_grading",
+      "model": "built-in-local-engine",
+      "promptTokens": 259,
+      "completionTokens": 89,
+      "totalTokens": 348,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Evaluate the student's answer to this open-ended learning question using the reference materials.\nQuestion: \"In the context of Economic poli..."
+    },
+    {
+      "id": "7664d7ac-8535-4d76-baf3-d9d3c805d1c4",
+      "createdAt": "2026-09-17T06:10:10.264Z",
+      "updatedAt": "2026-09-17T06:10:10.264Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "feature": "tutor_unsupported_refusal",
+      "model": "built-in-local-engine",
+      "promptTokens": 259,
+      "completionTokens": 153,
+      "totalTokens": 412,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "promptPreview": "Student question: \"explain unemployment in India\"\n\nNotice: Insufficient evidence in project materials for \"Economic policies in India\". Form..."
+    },
+    {
+      "id": "535847b3-4c31-4969-bb0b-9c1466658340",
+      "createdAt": "2026-09-17T06:10:14.271Z",
+      "updatedAt": "2026-09-17T06:10:14.271Z",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "feature": "tutor_general_knowledge",
+      "model": "built-in-local-engine",
+      "promptTokens": 489,
+      "completionTokens": 255,
+      "totalTokens": 744,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Student Question: explain unemployment in India\n\nRecent Conversation:\nTutor: I reviewed the uploaded materials for this project, but there i..."
+    },
+    {
+      "id": "eb2d5154-3c2e-4679-aa00-26509124d1b3",
+      "createdAt": "2026-09-18T10:47:00.783Z",
+      "updatedAt": "2026-09-18T10:47:00.783Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 127,
+      "completionTokens": 180,
+      "totalTokens": 307,
+      "estimatedCost": 0,
+      "latencyMs": 1,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium multiple_choice assessment question for the concept \"EPI Fundamentals\".\nContext from project notes: Core theoret..."
+    },
+    {
+      "id": "2fcef093-dfdc-4f6c-873d-4a7b133ffe3d",
+      "createdAt": "2026-09-18T10:47:00.795Z",
+      "updatedAt": "2026-09-18T10:47:00.795Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 135,
+      "completionTokens": 189,
+      "totalTokens": 324,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium open_ended assessment question for the concept \"EPI Operational Mechanics\".\nContext from project notes: Standard..."
+    },
+    {
+      "id": "f7bc131e-f6b9-49c9-8053-53ec5be92188",
+      "createdAt": "2026-09-18T10:47:00.803Z",
+      "updatedAt": "2026-09-18T10:47:00.803Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "feature": "adaptive_question_gen",
+      "model": "built-in-local-engine",
+      "promptTokens": 132,
+      "completionTokens": 184,
+      "totalTokens": 316,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Generate an adaptive medium multiple_choice assessment question for the concept \"EPI System Tradeoffs\".\nContext from project notes: Performa..."
+    },
+    {
+      "id": "e78f53c4-208f-47d9-b9cc-0eba2befe8e5",
+      "createdAt": "2026-09-18T10:47:22.572Z",
+      "updatedAt": "2026-09-18T10:47:22.572Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "feature": "assessment_grading",
+      "model": "built-in-local-engine",
+      "promptTokens": 241,
+      "completionTokens": 82,
+      "totalTokens": 323,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": true,
+      "insufficientEvidence": false,
+      "promptPreview": "Evaluate the student's answer to this open-ended learning question using the reference materials.\nQuestion: \"In the context of EPI Operation..."
+    },
+    {
+      "id": "a698f5ef-83bd-4857-9f62-9b0b67572329",
+      "createdAt": "2026-09-18T10:48:35.554Z",
+      "updatedAt": "2026-09-18T10:48:35.554Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "feature": "tutor_unsupported_refusal",
+      "model": "built-in-local-engine",
+      "promptTokens": 239,
+      "completionTokens": 147,
+      "totalTokens": 386,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "promptPreview": "Student question: \"hii\"\n\nNotice: Insufficient evidence in project materials for \"EPI\". Formulate a polite refusal explaining that the upload..."
+    },
+    {
+      "id": "ec7549cf-24d0-40a9-83e2-0caafcda1af7",
+      "createdAt": "2026-09-18T10:48:40.480Z",
+      "updatedAt": "2026-09-18T10:48:40.480Z",
+      "userId": "0f63f8fb-ef2b-46e7-9bd6-87adaed1b0ae",
+      "projectId": "04ef9f35-217e-406e-8c12-73cde7d50aee",
+      "feature": "tutor_unsupported_refusal",
+      "model": "built-in-local-engine",
+      "promptTokens": 240,
+      "completionTokens": 147,
+      "totalTokens": 387,
+      "estimatedCost": 0,
+      "latencyMs": 0,
+      "status": "SUCCESS",
+      "isGrounded": false,
+      "insufficientEvidence": true,
+      "promptPreview": "Student question: \"how r u\"\n\nNotice: Insufficient evidence in project materials for \"EPI\". Formulate a polite refusal explaining that the up..."
+    }
+  ],
+  "ai_evaluations": [
+    {
+      "id": "eval-1",
+      "benchmarkName": "Groundedness & Citation Accuracy",
+      "targetFeature": "tutor_chat",
+      "testCaseCount": 25,
+      "passedCount": 24,
+      "accuracyRate": 96,
+      "meanLatencyMs": 440,
+      "evaluatedAt": "2026-09-16T16:17:08.137Z",
+      "status": "PASSED",
+      "details": "Evaluated accuracy of page and section citations against retrieved project text chunks."
+    },
+    {
+      "id": "eval-2",
+      "benchmarkName": "Unsupported Question Handling & Refusal",
+      "targetFeature": "tutor_chat",
+      "testCaseCount": 20,
+      "passedCount": 20,
+      "accuracyRate": 100,
+      "meanLatencyMs": 320,
+      "evaluatedAt": "2026-09-16T16:17:08.137Z",
+      "status": "PASSED",
+      "details": "Tested out-of-domain and ungrounded queries; verified absence of hallucinated facts."
+    },
+    {
+      "id": "eval-3",
+      "benchmarkName": "Adaptive Open-Ended Rubric Grading Quality",
+      "targetFeature": "assessment_grading",
+      "testCaseCount": 30,
+      "passedCount": 29,
+      "accuracyRate": 96.6,
+      "meanLatencyMs": 515,
+      "evaluatedAt": "2026-09-16T16:17:08.137Z",
+      "status": "PASSED",
+      "details": "Compared AI grading feedback against expert rubric scores on accuracy and missing concepts."
+    }
+  ],
+  "background_jobs": [
+    {
+      "id": "job-1",
+      "jobType": "DOCUMENT_PROCESSING",
+      "entityId": "doc-transformers-guide",
+      "status": "READY",
+      "progress": 100,
+      "retryCount": 0,
+      "maxRetries": 3,
+      "logs": [
+        "Uploaded document: Transformer_Architecture_Deep_Dive.pdf",
+        "Queued in processing engine",
+        "Extracted 18 pages of text and mathematical notation",
+        "Identified 5 major architectural concepts",
+        "Generated 8 vector & keyword search chunks with page mapping",
+        "Indexing complete: Ready for Tutor & Quiz retrieval"
+      ],
+      "createdAt": "2026-09-09T04:17:08.137Z",
+      "completedAt": "2026-09-09T04:17:12.137Z"
+    },
+    {
+      "id": "job-2",
+      "jobType": "RECOMMENDATION_ENGINE",
+      "entityId": "proj-transformers",
+      "status": "READY",
+      "progress": 100,
+      "retryCount": 0,
+      "maxRetries": 3,
+      "logs": [
+        "Scanned concept mastery distribution for project",
+        "Identified weak concept: Positional Encoding (RoPE) at 42%",
+        "Generated targeted practice recommendation"
+      ],
+      "createdAt": "2026-09-17T00:17:08.137Z",
+      "completedAt": "2026-09-17T00:17:09.337Z"
+    },
+    {
+      "id": "1adc0597-9a6c-427d-9308-8a9fcf925fc9",
+      "createdAt": "2026-09-17T05:17:34.041Z",
+      "updatedAt": "2026-09-17T05:17:34.097Z",
+      "jobType": "DOCUMENT_PROCESSING",
+      "entityId": "fc3b2c43-292d-42f7-ab82-be107a524b60",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "payload": {
+        "filePath": "C:\\Users\\Aswitha\\.gemini\\antigravity-ide\\scratch\\ai-study-companion\\server\\uploads\\1789622253811-18980528-Demographic-Features-and-Indicators-of-Development Unit 1.pptx"
+      },
+      "status": "FAILED",
+      "progress": 0,
+      "retryCount": 0,
+      "maxRetries": 3,
+      "errorMessage": "No handler registered for job type DOCUMENT_PROCESSING",
+      "logs": [
+        "Job registered in queue: DOCUMENT_PROCESSING for entity fc3b2c43-292d-42f7-ab82-be107a524b60",
+        "Fatal Failure: No handler registered for job type DOCUMENT_PROCESSING"
+      ]
+    },
+    {
+      "id": "4ccd4899-d3f2-41bf-88ed-719d9ae567d6",
+      "createdAt": "2026-09-17T05:17:50.101Z",
+      "updatedAt": "2026-09-17T05:17:50.164Z",
+      "jobType": "DOCUMENT_PROCESSING",
+      "entityId": "99aa1881-dfab-4de4-a6a7-8ded290a2346",
+      "userId": "user-1",
+      "projectId": "8c91586a-8ec0-4dd9-b2d5-a8b3629ffc1d",
+      "payload": {
+        "filePath": "C:\\Users\\Aswitha\\.gemini\\antigravity-ide\\scratch\\ai-study-companion\\server\\uploads\\1789622270007-775899475-Employment-and-Unemployment-Policy-Implications unit 2a.pptx"
+      },
+      "status": "FAILED",
+      "progress": 0,
+      "retryCount": 0,
+      "maxRetries": 3,
+      "errorMessage": "No handler registered for job type DOCUMENT_PROCESSING",
+      "logs": [
+        "Job registered in queue: DOCUMENT_PROCESSING for entity 99aa1881-dfab-4de4-a6a7-8ded290a2346",
+        "Fatal Failure: No handler registered for job type DOCUMENT_PROCESSING"
+      ]
+    }
+  ]
+}
