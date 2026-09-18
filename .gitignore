@@ -5,5 +5,8 @@ server/uploads/*
 .env
 .env.*
 !.env.example
+!client/.env.production
+!client/.env.example
 *.log
 .DS_Store
+

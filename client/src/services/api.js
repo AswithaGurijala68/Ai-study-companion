@@ -1,8 +1,39 @@
-const BASE_URL = '/api';
+// Determine API Base URL dynamically
+const resolveApiBaseUrl = () => {
+  // 1. Explicit Vite environment variable
+  const envUrl = import.meta.env.VITE_API_URL || import.meta.env.VITE_BACKEND_URL;
+  if (envUrl && typeof envUrl === 'string' && envUrl.trim()) {
+    const cleanUrl = envUrl.trim().replace(/\/+$/, '');
+    return cleanUrl.endsWith('/api') ? cleanUrl : `${cleanUrl}/api`;
+  }
+
+  // 2. Runtime browser check
+  if (typeof window !== 'undefined') {
+    const hostname = window.location.hostname;
+    // When running locally in dev mode, use relative /api (handled by Vite proxy)
+    if (hostname === 'localhost' || hostname === '127.0.0.1') {
+      return '/api';
+    }
+    // When deployed on the Render client domain
+    if (hostname.includes('ai-study-companion-client.onrender.com')) {
+      return 'https://ai-study-companion-server-ysjy.onrender.com/api';
+    }
+  }
+
+  // 3. Fallback production backend URL
+  return 'https://ai-study-companion-server-ysjy.onrender.com/api';
+};
+
+export const BASE_URL = resolveApiBaseUrl();
 
 let authToken = localStorage.getItem('study_auth_token') || '';
 
-export function setAuthToken(token) { authToken = token || ''; if (authToken) localStorage.setItem('study_auth_token', authToken); else localStorage.removeItem('study_auth_token'); }
+export function setAuthToken(token) { 
+  authToken = token || ''; 
+  if (authToken) localStorage.setItem('study_auth_token', authToken); 
+  else localStorage.removeItem('study_auth_token'); 
+}
+
 export function clearAuthToken() { setAuthToken(''); }
 export function getAuthToken() { return authToken; }
 
@@ -15,10 +46,18 @@ async function request(endpoint, options = {}) {
     headers['Content-Type'] = 'application/json';
   }
 
-  const response = await fetch(`${BASE_URL}${endpoint}`, {
-    ...options,
-    headers
-  });
+  let response;
+  try {
+    response = await fetch(`${BASE_URL}${endpoint}`, {
+      ...options,
+      headers
+    });
+  } catch (netErr) {
+    console.error(`Network error reaching ${BASE_URL}${endpoint}:`, netErr);
+    throw new Error(
+      'Unable to connect to the backend server. If the server is starting up (e.g. Render free tier spin-up), please wait ~30 seconds and try again.'
+    );
+  }
 
   if (!response.ok) {
     const errorBody = await response.json().catch(() => ({ error: 'Request failed' }));

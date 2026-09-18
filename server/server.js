@@ -10,11 +10,45 @@ const db = require('./src/db/database');
 const app = express();
 
 // Enable Cross-Origin Resource Sharing
-app.use(cors({
-  origin: '*',
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'x-user-id']
-}));
+const corsOptions = {
+  origin: (origin, callback) => {
+    // Allow requests with no origin (such as mobile apps, curl, or same-origin)
+    if (!origin) return callback(null, true);
+
+    const configuredOrigins = process.env.CORS_ORIGIN
+      ? process.env.CORS_ORIGIN.split(',').map(s => s.trim())
+      : [];
+
+    const defaultAllowed = [
+      'https://ai-study-companion-client.onrender.com',
+      'http://localhost:5173',
+      'http://localhost:3000',
+      'http://localhost:5000',
+      'http://127.0.0.1:5173',
+      'http://127.0.0.1:3000'
+    ];
+
+    const allAllowed = [...configuredOrigins, ...defaultAllowed];
+
+    if (
+      allAllowed.includes('*') ||
+      allAllowed.includes(origin) ||
+      origin.endsWith('.onrender.com') ||
+      process.env.NODE_ENV !== 'production'
+    ) {
+      return callback(null, true);
+    }
+
+    // Permissive fallback
+    return callback(null, true);
+  },
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'x-user-id', 'Accept', 'Origin', 'X-Requested-With'],
+  credentials: true
+};
+
+app.use(cors(corsOptions));
+app.options('*', cors(corsOptions));
 
 // Body parsing middleware
 app.use(express.json({ limit: '20mb' }));

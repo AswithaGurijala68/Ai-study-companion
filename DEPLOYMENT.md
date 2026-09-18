@@ -1,37 +1,46 @@
 # StudyFlow AI — Public Deployment Guide
 
-## Recommended: Render
+## Live Deployment Links
 
-This repository is prepared for a single-service deployment. The Node/Express server serves the built React application and `/api` from the same URL.
+- **Frontend Client:** [https://ai-study-companion-client.onrender.com](https://ai-study-companion-client.onrender.com)
+- **Backend API:** [https://ai-study-companion-server-ysjy.onrender.com](https://ai-study-companion-server-ysjy.onrender.com)
+- **API Health Check:** [https://ai-study-companion-server-ysjy.onrender.com/health](https://ai-study-companion-server-ysjy.onrender.com/health)
 
-### 1. Push to GitHub
-Create a public GitHub repository and push the project contents.
+---
 
-### 2. Create the Render service
-Create a **Web Service** from the repository. The included `render.yaml` contains the build/start/health configuration.
+## Deployment Architecture Options
 
-If entering settings manually:
+### Option A: Separate Frontend & Backend Services (Current Live Setup)
 
-- **Build command:** `npm ci --prefix client && npm run build --prefix client && npm ci --prefix server --omit=dev`
-- **Start command:** `node server/server.js`
-- **Health check path:** `/health`
+#### 1. Backend Web Service (Render)
+- **Service Type:** Web Service
+- **Root Directory:** `server` (or repository root)
+- **Build Command:** `npm ci --prefix server --omit=dev`
+- **Start Command:** `node server/server.js`
+- **Health Check Path:** `/health`
+- **Environment Variables:**
+  - `PORT`: `5000` (or Render default)
+  - `NODE_ENV`: `production`
+  - `AUTH_SECRET`: A long random secret key
+  - `CORS_ORIGIN`: `https://ai-study-companion-client.onrender.com,http://localhost:5173`
+  - `GEMINI_API_KEY`: *(Optional)* Your Google Gemini API key
+  - `GEMINI_MODEL`: `gemini-1.5-flash`
 
-### 3. Environment variables
-Set:
+#### 2. Frontend Static Site (Render)
+- **Service Type:** Static Site
+- **Root Directory:** `client` (or repository root)
+- **Build Command:** `npm ci && npm run build` (or `npm ci --prefix client && npm run build --prefix client`)
+- **Publish Directory:** `dist` (or `client/dist`)
+- **Environment Variables:**
+  - `VITE_API_URL`: `https://ai-study-companion-server-ysjy.onrender.com/api`
 
-- `AUTH_SECRET` — a long random secret. Render can generate it when using `render.yaml`.
-- `GEMINI_API_KEY` — optional; set it to enable live Gemini responses.
-- `GEMINI_MODEL` — optional; defaults to `gemini-1.5-flash`.
+---
 
-Never commit real API keys or production secrets.
-
-### 4. Verify the deployment
-Open:
-
-- `/health` — should return JSON with `status: healthy`.
-- `/` — should show the StudyFlow AI login screen.
-
-Sign in with the demo student account or create a new student account. For the Admin Dashboard, use the demo admin account supplied in the README.
+### Option B: Unified Full-Stack Service
+The Node/Express server serves the built React application and `/api` from the same single URL.
+- **Build Command:** `npm ci --prefix client && npm run build --prefix client && npm ci --prefix server --omit=dev`
+- **Start Command:** `node server/server.js`
+- **Health Check Path:** `/health`
 
 ## Docker alternative
 
